@@ -1,6 +1,6 @@
 +++
 title = 'Over mij & bestellen'
-description = 'Wie er achter de naald zit, en hoe je een uniek werkje bestelt.'
+description = 'Wie er achter de naald zit, en hoe je een uniek werk bestelt.'
 
 [menus.main]
   name = 'Over mij'
@@ -9,7 +9,7 @@ description = 'Wie er achter de naald zit, en hoe je een uniek werkje bestelt.'
 
 ## Hallo, ik ben Lucia
 
-Achter Luz y Lucha zit ik, Lucia Dewitte. Wat begon als een hobby aan de keukentafel, groeide uit tot een kleine passie voor alles wat met naald en draad te maken heeft. Ik hou van warme kleuren, bloemen, zonnetjes en kleine details die een glimlach toveren.
+Achter Luz y Lucha zit ik, Lucia Dewitte. Wat begon als een hobby, groeide uit tot een passie voor alles wat met naald en draad te maken heeft. Ik hou van warme kleuren, unieke verhalen, symboliek en kleine details die een glimlach op je gezicht toveren.
 
 Elke broche en elk textielwerk maak ik volledig met de hand. Daardoor is elk stuk uniek – met de kleine eigenaardigheden die handwerk zo bijzonder maken.
 

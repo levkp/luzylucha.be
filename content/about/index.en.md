@@ -9,7 +9,7 @@ description = 'Who’s behind the needle, and how to order a unique piece.'
 
 ## Hello, I’m Lucia
 
-I’m Lucia Dewitte, the maker behind Luz y Lucha. What started as a hobby at the kitchen table grew into a small passion for everything needle and thread. I love warm colours, flowers, little suns and tiny details that make people smile.
+I’m Lucia Dewitte, the maker behind Luz y Lucha. What started as a hobby grew into a passion for everything needle and thread. I love warm colours, unique stories, symbolism and the little details that put a smile on your face.
 
 Every brooch and textile piece is made entirely by hand. That makes each one unique – with the small quirks that make handwork so special.
 

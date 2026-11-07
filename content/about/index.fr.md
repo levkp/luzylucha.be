@@ -9,7 +9,7 @@ description = 'Qui se cache derrière l’aiguille, et comment commander une pi�
 
 ## Bonjour, je suis Lucia
 
-Derrière Luz y Lucha, il y a moi, Lucia Dewitte. Ce qui a commencé comme un passe-temps à la table de la cuisine est devenu une petite passion pour tout ce qui touche au fil et à l’aiguille. J’aime les couleurs chaudes, les fleurs, les petits soleils et les détails qui font sourire.
+Derrière Luz y Lucha, il y a moi, Lucia Dewitte. Ce qui a commencé comme un passe-temps est devenu une passion pour tout ce qui touche au fil et à l’aiguille. J’aime les couleurs chaudes, les histoires uniques, la symbolique et les petits détails qui font naître un sourire sur votre visage.
 
 Chaque broche et chaque pièce textile est entièrement faite à la main. Chacune est donc unique – avec les petites particularités qui rendent le fait main si précieux.
 

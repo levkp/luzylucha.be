@@ -6,4 +6,4 @@ title = 'Mijn creaties'
   weight = 20
 +++
 
-Broches, borduur- en naaiwerk, patchwork en textielkunst – elk stuk met de hand gemaakt en uniek. Zie je iets dat je bevalt? Ik maak graag iets gelijkaardigs op maat.
+Van broche tot babydeken – elk stuk met de hand gemaakt en uniek. Zie je iets dat je bevalt? Als je geluk hebt is het nog beschikbaar, zoniet maak ik graag iets gelijkaardigs op maat.

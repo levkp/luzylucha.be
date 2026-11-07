@@ -21,7 +21,7 @@ quote = 'Elke steek vertelt een verhaal. Geen twee broches zijn hetzelfde – ne
 
 [[steps]]
   title = 'Een cadeau om te koesteren'
-  text = 'Je ontvangt een uniek, met liefde gemaakt werkje – klaar om te dragen of cadeau te doen.'
+  text = 'Je ontvangt een uniek, met liefde gemaakt werk – klaar om te dragen of cadeau te doen.'
 +++
 
 Welkom in mijn naai- en borduuratelier, waar verhalen tot leven komen in draad en stof. Ik maak kleurrijke broches, patchwork en textielkunst, en creëer graag iets persoonlijks voor jou of iemand die je graag ziet.

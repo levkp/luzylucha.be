@@ -6,4 +6,4 @@ title = 'My creations'
   weight = 20
 +++
 
-Brooches, embroidery, sewing, patchwork and textile art – every piece handmade and one of a kind. See something you like? I’m happy to make something similar, made to measure.
+From brooch to baby blanket – every piece handmade and one of a kind. See something you like? If you’re lucky, it’s still available; if not, I’m happy to make something similar, made to measure.

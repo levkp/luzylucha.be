@@ -6,4 +6,4 @@ title = 'Mes créations'
   weight = 20
 +++
 
-Broches, broderie, couture, patchwork et art textile – chaque pièce est faite main et unique. Un coup de cœur ? Je réalise volontiers une création semblable sur mesure.
+De la broche à la couverture pour bébé – chaque pièce est faite main et unique. Un coup de cœur ? Avec un peu de chance, elle est encore disponible ; sinon, je réalise volontiers une création semblable sur mesure.
