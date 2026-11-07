@@ -24,4 +24,4 @@ quote = 'Elke steek vertelt een verhaal. Geen twee broches zijn hetzelfde – ne
   text = 'Je ontvangt een uniek, met liefde gemaakt werkje – klaar om te dragen of cadeau te doen.'
 +++
 
-Welkom in mijn kleine textielatelier. Ik borduur en naai kleurrijke broches, patchwork en textielkunst, en maak graag iets persoonlijks voor jou of iemand die je graag ziet.
+Welkom in mijn naai- en borduuratelier, waar verhalen tot leven komen in draad en stof. Ik maak kleurrijke broches, patchwork en textielkunst, en creëer graag iets persoonlijks voor jou of iemand die je graag ziet.

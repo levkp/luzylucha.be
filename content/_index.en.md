@@ -24,4 +24,4 @@ quote = 'Every stitch tells a story. No two brooches are alike – just like the
   text = 'You receive a one-of-a-kind piece made with love – ready to wear or to give away.'
 +++
 
-Welcome to my little textile studio. I embroider and sew colourful brooches, patchwork and textile art, and I love making something personal for you or someone dear to you.
+Welcome to my sewing and embroidery studio, where stories come to life in thread and fabric. I make colourful brooches, patchwork and textile art, and I love creating something personal for you or someone dear to you.
