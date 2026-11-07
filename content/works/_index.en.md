@@ -1,5 +1,5 @@
 +++
-title = 'All of my creations'
+title = 'My creations'
 
 [menus.main]
   name = 'Creations'
