@@ -15,7 +15,7 @@ Chaque broche et chaque pièce textile est entièrement faite à la main. Chacun
 
 ## Commander {#order}
 
-Vous souhaitez une broche du [portfolio](../works/) ou vous avez une idée de cadeau personnalisé ? Voici comment procéder :
+Vous souhaitez l’une de mes [créations](../works/) ou vous avez une idée de cadeau personnalisé ? Voici comment procéder :
 
 1. **Contactez-moi** sur Instagram ([@luzylucha](https://www.instagram.com/luzylucha/)) et dites-moi ce que vous cherchez.
 2. **Nous discutons ensemble** du design, des couleurs, du prix et du délai.

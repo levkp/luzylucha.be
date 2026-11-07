@@ -15,7 +15,7 @@ Every brooch and textile piece is made entirely by hand. That makes each one uni
 
 ## Ordering {#order}
 
-Would you like a brooch from the [portfolio](../works/) or do you have an idea for a personalised gift? Here’s how it works:
+Would you like one of my [creations](../works/) or do you have an idea for a personalised gift? Here’s how it works:
 
 1. **Get in touch** on Instagram ([@luzylucha](https://www.instagram.com/luzylucha/)) and tell me what you’re looking for.
 2. **We discuss together** the design, colours, price and timing.

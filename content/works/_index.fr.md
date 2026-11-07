@@ -1,9 +1,9 @@
 +++
-title = 'Toutes mes broderies'
+title = 'Toutes mes créations'
 
 [menus.main]
-  name = 'Broderies'
+  name = 'Créations'
   weight = 20
 +++
 
-Broches, patchwork et art textile – chaque pièce est brodée à la main et unique. Un coup de cœur ? Je réalise volontiers une création semblable sur mesure.
+Broches, broderie, couture, patchwork et art textile – chaque pièce est faite main et unique. Un coup de cœur ? Je réalise volontiers une création semblable sur mesure.

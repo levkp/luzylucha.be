@@ -4,7 +4,7 @@ date = '{{ .Date }}'
 draft = true
 # Show this work on the front page.
 featured = false
-# One of: brooch, patchwork, embroidery
+# One of: brooch, patchwork, embroidery, sewing
 category = 'brooch'
 materials = ''
 size = ''

@@ -3,7 +3,7 @@ title = 'Luz y Lucha'
 tagline = 'Unique textile creations'
 subtitle = 'Embroidered brooches – special personalised gifts'
 featuredTitle = 'From the studio'
-featuredIntro = 'A selection of my latest embroidery, handmade stitch by stitch.'
+featuredIntro = 'A selection of my latest creations, handmade stitch by stitch.'
 stepsTitle = 'Your made-to-measure gift'
 quote = 'Every stitch tells a story. No two brooches are alike – just like the people who wear them.'
 
@@ -16,7 +16,7 @@ quote = 'Every stitch tells a story. No two brooches are alike – just like the
   text = 'A name, a favourite flower, a pet or a memory: anything can be the starting point for a unique piece.'
 
 [[steps]]
-  title = 'I embroider it by hand'
+  title = 'I make it by hand'
   text = 'With carefully chosen threads and fabrics, I bring your design to life, stitch by stitch, in my studio.'
 
 [[steps]]
@@ -24,4 +24,4 @@ quote = 'Every stitch tells a story. No two brooches are alike – just like the
   text = 'You receive a one-of-a-kind piece made with love – ready to wear or to give away.'
 +++
 
-Welcome to my little embroidery studio. I make colourful brooches, patchwork and textile art, and I love embroidering something personal for you or someone dear to you.
+Welcome to my little textile studio. I embroider and sew colourful brooches, patchwork and textile art, and I love making something personal for you or someone dear to you.

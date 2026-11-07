@@ -1,9 +1,9 @@
 +++
-title = 'All of my embroidery'
+title = 'All of my creations'
 
 [menus.main]
-  name = 'Embroidery'
+  name = 'Creations'
   weight = 20
 +++
 
-Brooches, patchwork and textile art – every piece hand-embroidered and one of a kind. See something you like? I’m happy to make something similar, made to measure.
+Brooches, embroidery, sewing, patchwork and textile art – every piece handmade and one of a kind. See something you like? I’m happy to make something similar, made to measure.

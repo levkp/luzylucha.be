@@ -15,7 +15,7 @@ Elke broche en elk textielwerk maak ik volledig met de hand. Daardoor is elk stu
 
 ## Bestellen {#order}
 
-Wil je een broche uit het [portfolio](../works/) of heb je een idee voor een gepersonaliseerd cadeau? Zo gaat het in zijn werk:
+Wil je een van mijn [creaties](../works/) of heb je een idee voor een gepersonaliseerd cadeau? Zo gaat het in zijn werk:
 
 1. **Neem contact op** via Instagram ([@luzylucha](https://www.instagram.com/luzylucha/)) en vertel me wat je zoekt.
 2. **We bespreken samen** het ontwerp, de kleuren, de prijs en de timing.

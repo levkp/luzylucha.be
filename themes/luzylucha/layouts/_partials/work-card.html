@@ -12,7 +12,8 @@ Renders a work as a card. Shows a stitched placeholder when no photo is uploaded
 {{- $tint := index $tints (mod (.index | default 0) 3) }}
 <li class="work work--{{ $style }}">
   <a href="{{ $p.RelPermalink }}" class="work-link">
-    <div class="work-frame">
+    <div class="work-frame{{ if eq $style "hoop" }} hoop{{ end }}">
+      {{- if eq $style "hoop" }}<div class="hoop-fabric">{{ end }}
       {{- if $img }}
         {{- $small := $img.Process "fill 480x480 Center webp q82" }}
         {{- $large := $img.Process "fill 800x800 Center webp q82" }}
@@ -32,6 +33,7 @@ Renders a work as a card. Shows a stitched placeholder when no photo is uploaded
           <span class="placeholder-label">{{ T "photoComingSoon" }}</span>
         </div>
       {{- end }}
+      {{- if eq $style "hoop" }}</div>{{ partial "svg/hoop.html" . }}{{ end }}
     </div>
     <div class="work-caption">
       {{- with $p.Params.category }}<span class="work-category">{{ T (printf "category_%s" .) }}</span>{{ end }}
