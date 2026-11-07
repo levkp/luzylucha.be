@@ -1,0 +1,23 @@
+{{- /*
+Wooden embroidery hoop with metal clasp (vector version of assets/img/hoop.png).
+Drawn as an overlay: place it inside a .hoop container, above a .hoop-fabric element.
+The fabric opening is a circle centred at (400, 428) with radius 306 in the 800×800 source,
+cropped here to viewBox "40 12 720 776".
+*/ -}}
+<svg class="hoop-ring" viewBox="40 12 720 776" aria-hidden="true" focusable="false">
+  <g fill="none">
+    {{- /* inner hoop, dark seam, outer hoop (split at the top for the clasp) */}}
+    <circle cx="400" cy="428" r="316" stroke="#dcaf80" stroke-width="21"/>
+    <circle cx="400" cy="428" r="330" stroke="#b18254" stroke-width="7"/>
+    <path d="M417.5 86 A342.5 342.5 0 1 1 382.5 86" stroke="#dcaf80" stroke-width="19"/>
+    {{- /* metal band hugging the outer hoop */}}
+    <path d="M262 99.4 A356.5 356.5 0 0 1 382.5 71.9 M417.5 71.9 A356.5 356.5 0 0 1 538 99.4" stroke="#b4b3b0" stroke-width="9"/>
+  </g>
+  <g fill="#b4b3b0">
+    <rect x="374" y="20" width="6" height="56"/>
+    <rect x="419" y="20" width="7" height="56"/>
+    <rect x="315" y="35" width="160" height="15" rx="7.5"/>
+    <rect x="357" y="29" width="17" height="27" rx="2"/>
+    <rect x="426" y="27" width="49" height="31" rx="5"/>
+  </g>
+</svg>
