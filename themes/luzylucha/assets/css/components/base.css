@@ -162,9 +162,11 @@ a:hover { color: var(--red-deep); }
 /* ---------- Placeholders for works without a photo ---------- */
 .placeholder {
   position: relative;
-  display: grid;
-  place-items: center;
-  align-content: center;
+  /* Flex (not grid) so content wider than the box still overflows evenly on both sides. */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: .75rem;
   width: 100%;
   height: 100%;

@@ -110,6 +110,11 @@
   box-shadow: inset 0 4px 14px rgba(58, 26, 20, .18);
 }
 .hoop-fabric > * { width: 100%; height: 100%; }
+
+/* Placeholders in a round hoop: keep art and label inside the circle. */
+.hoop-fabric > .placeholder { padding: 10%; gap: .6rem; }
+.hoop-fabric .placeholder-art { width: auto; height: 46%; max-width: 60%; }
+.hoop-fabric .placeholder-label { font-size: .7rem; letter-spacing: .1em; }
 .hoop-ring {
   position: absolute;
   inset: 0;
