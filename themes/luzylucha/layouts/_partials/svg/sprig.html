@@ -1,0 +1,45 @@
+{{- /*
+Embroidered flower sprig.
+@context {string} class  CSS class.
+@context {string} petal  Petal colour (default #cc0000).
+@context {string} heart  Petal centre colour (default #f9b34b).
+*/ -}}
+{{- $petal := .petal | default "#cc0000" }}
+{{- $heart := .heart | default "#f9b34b" }}
+<svg class="{{ .class | default "sprig" }}" viewBox="0 0 140 220" aria-hidden="true" focusable="false">
+  <g fill="none" stroke="#7b7a35" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 3">
+    <path d="M70 216 C66 170 74 120 70 62"/>
+    <path d="M69 150 C88 130 100 110 106 86"/>
+    <path d="M71 120 C54 104 42 90 36 70"/>
+  </g>
+  <g fill="#8c8a40" stroke="#6d6b2c" stroke-width="1" stroke-dasharray="2 2">
+    <ellipse cx="54" cy="176" rx="7" ry="18" transform="rotate(-50 54 176)"/>
+    <ellipse cx="86" cy="190" rx="7" ry="18" transform="rotate(50 86 190)"/>
+    <ellipse cx="56" cy="140" rx="6" ry="15" transform="rotate(-55 56 140)"/>
+    <ellipse cx="88" cy="112" rx="6" ry="14" transform="rotate(40 88 112)"/>
+    <ellipse cx="82" cy="150" rx="5" ry="12" transform="rotate(60 82 150)"/>
+  </g>
+  <g stroke="#cfd09a" stroke-width="0.8" stroke-dasharray="2 2" fill="none">
+    <path d="M44 166 L64 186"/><path d="M96 180 L76 200"/><path d="M47 132 L65 148"/>
+  </g>
+  <g fill="{{ $petal }}" stroke="#7a0000" stroke-width="0.8" stroke-dasharray="2 1.5">
+    <ellipse cx="106" cy="76" rx="6" ry="10"/>
+    <ellipse cx="34" cy="62" rx="6" ry="10" transform="rotate(-20 34 62)"/>
+  </g>
+  <g transform="translate(70 46)">
+    <g fill="{{ $petal }}" stroke="#7a0000" stroke-width="0.9" stroke-dasharray="3 1.5">
+      <ellipse cx="0" cy="-17" rx="8" ry="15"/>
+      <ellipse cx="0" cy="-17" rx="8" ry="15" transform="rotate(60)"/>
+      <ellipse cx="0" cy="-17" rx="8" ry="15" transform="rotate(120)"/>
+      <ellipse cx="0" cy="-17" rx="8" ry="15" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-17" rx="8" ry="15" transform="rotate(240)"/>
+      <ellipse cx="0" cy="-17" rx="8" ry="15" transform="rotate(300)"/>
+    </g>
+    <g stroke="#ffffff" stroke-opacity=".45" stroke-width="1" fill="none" stroke-dasharray="2 2">
+      <path d="M0 -6 V-28"/><path d="M0 -6 V-28" transform="rotate(60)"/><path d="M0 -6 V-28" transform="rotate(120)"/>
+      <path d="M0 -6 V-28" transform="rotate(180)"/><path d="M0 -6 V-28" transform="rotate(240)"/><path d="M0 -6 V-28" transform="rotate(300)"/>
+    </g>
+    <circle r="8" fill="{{ $heart }}" stroke="#a8641a" stroke-width="1.2" stroke-dasharray="2 1.5"/>
+    <circle r="3" fill="#7a3b10"/>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+{{ define "main" }}
+{{- $img := partial "work-image.html" . }}
+<article class="container work-detail">
+  <p class="breadcrumb"><a href="{{ .Parent.RelPermalink }}">← {{ T "backToWorks" }}</a></p>
+
+  <div class="work-detail-grid">
+    <figure class="work-detail-media">
+      {{- if $img }}
+        {{- $md := $img.Process "fit 900x900 webp q85" }}
+        {{- $lg := $img.Process "fit 1600x1600 webp q85" }}
+        <a href="{{ $lg.RelPermalink }}" class="work-detail-zoom">
+          <img src="{{ $md.RelPermalink }}"
+               srcset="{{ $md.RelPermalink }} {{ $md.Width }}w, {{ $lg.RelPermalink }} {{ $lg.Width }}w"
+               sizes="(min-width: 60rem) 34rem, 92vw"
+               width="{{ $md.Width }}" height="{{ $md.Height }}" alt="{{ .Params.alt | default .Title }}">
+        </a>
+      {{- else }}
+        <div class="placeholder placeholder--linen placeholder--large">
+          {{ partial "svg/sun.html" (dict "class" "placeholder-art") }}
+          <span class="placeholder-label">{{ T "photoComingSoon" }}</span>
+        </div>
+      {{- end }}
+    </figure>
+
+    <div class="work-detail-text">
+      {{- with .Params.category }}<p class="work-category">{{ T (printf "category_%s" .) }}</p>{{ end }}
+      <h1 class="page-title">{{ .Title }}</h1>
+      <div class="prose">{{ .Content }}</div>
+
+      {{- if or .Params.materials .Params.size }}
+      <dl class="work-specs">
+        {{- with .Params.materials }}<dt>{{ T "materials" }}</dt><dd>{{ . }}</dd>{{ end }}
+        {{- with .Params.size }}<dt>{{ T "size" }}</dt><dd>{{ . }}</dd>{{ end }}
+      </dl>
+      {{- end }}
+
+      <aside class="interest">
+        <h2>{{ T "interestedTitle" }}</h2>
+        <p>{{ T "interestedText" }}</p>
+        <div class="actions">
+          {{- with site.Params.instagram }}
+            <a class="button button--primary" href="https://ig.me/m/{{ . }}" rel="noopener">{{ partial "svg/instagram.html" . }} {{ T "messageInstagram" }}</a>
+          {{- end }}
+          {{- with site.Params.email }}
+            <a class="button button--ghost" href="mailto:{{ . }}?subject={{ $.Title | urlquery }}">{{ partial "svg/mail.html" . }} {{ T "email" }}</a>
+          {{- end }}
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <nav class="pager">
+    {{- with .PrevInSection }}<a class="pager-prev" href="{{ .RelPermalink }}" rel="prev"><span>{{ T "previous" }}</span>{{ .LinkTitle }}</a>{{ end }}
+    {{- with .NextInSection }}<a class="pager-next" href="{{ .RelPermalink }}" rel="next"><span>{{ T "next" }}</span>{{ .LinkTitle }}</a>{{ end }}
+  </nav>
+</article>
+{{ end }}

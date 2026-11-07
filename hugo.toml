@@ -1,0 +1,35 @@
+baseURL = 'https://luzylucha.be/'
+title = 'Luz y Lucha'
+theme = 'luzylucha'
+
+defaultContentLanguage = 'nl'
+defaultContentLanguageInSubdir = false
+disableKinds = ['taxonomy', 'term', 'rss']
+
+[params]
+  author = 'Lucia Dewitte'
+  instagram = 'luzylucha'
+  # Fill in to show an e-mail address in the footer and on the contact sections.
+  email = ''
+
+[languages]
+  [languages.nl]
+    label = 'Nederlands'
+    locale = 'nl-BE'
+    weight = 1
+    [languages.nl.params]
+      description = 'Unieke textielcreaties: geborduurde broches en bijzondere gepersonaliseerde cadeaus, met liefde handgemaakt door Lucia Dewitte.'
+
+  [languages.en]
+    label = 'English'
+    locale = 'en'
+    weight = 2
+    [languages.en.params]
+      description = 'Unique textile creations: embroidered brooches and special personalised gifts, lovingly handmade by Lucia Dewitte.'
+
+  [languages.fr]
+    label = 'Français'
+    locale = 'fr-BE'
+    weight = 3
+    [languages.fr.params]
+      description = 'Créations textiles uniques : broches brodées et cadeaux personnalisés d’exception, faits main avec amour par Lucia Dewitte.'

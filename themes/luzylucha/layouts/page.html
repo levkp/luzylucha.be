@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="container page-article">
+  <header class="page-head">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{- with .Description }}<p class="section-lead">{{ . }}</p>{{ end }}
+  </header>
+  <div class="prose stitched-panel">
+    {{ partial "svg/sprig.html" (dict "class" "panel-sprig") }}
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

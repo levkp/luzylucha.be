@@ -1,0 +1,58 @@
+/* ---------- Generic pages & sections ---------- */
+.page-head { padding-top: 3rem; margin-bottom: 2.5rem; text-align: center; }
+.page-title {
+  font-size: clamp(2rem, 1.4rem + 2.6vw, 3rem);
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.page-head .page-title::after {
+  content: "";
+  display: block;
+  width: 7rem;
+  height: 3px;
+  margin: 1.25rem auto 0;
+  background: var(--stitch-red);
+}
+
+.section-works .prose { text-align: center; margin-inline: auto; margin-bottom: 3rem; color: var(--ink-soft); }
+
+.prose { max-width: 42rem; }
+.prose h2 {
+  font-size: 1.4rem;
+  color: var(--red);
+  margin-top: 2rem;
+  scroll-margin-top: 1rem;
+}
+.prose h2:first-child { margin-top: 0; }
+.prose h3 { font-size: 1.1rem; margin-top: 1.5rem; }
+.prose ul, .prose ol { padding-left: 1.25rem; }
+.prose li { margin-bottom: .35rem; }
+.prose li::marker { color: var(--red); }
+.prose img { border-radius: var(--radius); margin-block: 1.5rem; }
+
+.page-article .prose { margin-inline: auto; }
+
+.stitched-panel {
+  position: relative;
+  padding: clamp(1.75rem, 4vw, 3rem);
+  border-radius: 22px;
+  background: rgba(255, 248, 241, .8);
+  box-shadow: var(--shadow);
+  outline: 2px dashed rgba(204, 0, 0, .45);
+  outline-offset: -12px;
+}
+.panel-sprig {
+  position: absolute;
+  right: -2.5rem;
+  top: -2.5rem;
+  width: 90px;
+  transform: rotate(18deg);
+}
+@media (max-width: 47.99rem) {
+  .panel-sprig { right: -.5rem; width: 64px; }
+}
+
+.not-found { padding-block: 4rem 2rem; }
+.not-found-heart { width: 6rem; margin: 0 auto 1.5rem; transform: rotate(-10deg); }
+.not-found .actions { justify-content: center; }

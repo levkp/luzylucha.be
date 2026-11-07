@@ -1,0 +1,9 @@
+{{- /* Satin-stitch style heart. Pass a dict with optional "class" and "fill". */ -}}
+<svg class="{{ .class | default "heart" }}" viewBox="0 0 100 92" aria-hidden="true" focusable="false">
+  <path d="M50 88 C20 66 4 48 4 28 C4 13 15 4 28 4 C38 4 46 10 50 19 C54 10 62 4 72 4 C85 4 96 13 96 28 C96 48 80 66 50 88Z"
+        fill="{{ .fill | default "#cc0000" }}" stroke="#7a0000" stroke-width="2" stroke-dasharray="5 3"/>
+  <g stroke="#ffffff" stroke-opacity=".35" stroke-width="1.4" fill="none">
+    <path d="M18 18 L50 50"/><path d="M14 32 L48 66"/><path d="M28 10 L52 34"/><path d="M50 30 L82 62"/>
+    <path d="M60 14 L86 40"/><path d="M76 8 L92 24"/><path d="M30 56 L46 72"/>
+  </g>
+</svg>

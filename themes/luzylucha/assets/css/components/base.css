@@ -1,0 +1,195 @@
+/* ---------- Design tokens ---------- */
+:root {
+  --red: #cc0000;
+  --red-deep: #9e0000;
+  --gold: #f9b34b;
+  --gold-deep: #d98a1c;
+  --linen: #efddce;
+  --paper: #f8eee6;
+  --cream: #fff8f1;
+  --ink: #3a1a14;
+  --ink-soft: #6b4a3f;
+  --olive: #7b7a35;
+  --wood: #d9a868;
+  --wood-deep: #b98445;
+
+  --font-display: "Cinzel", "Trajan Pro", Georgia, serif;
+  --font-body: "Lora", Georgia, "Times New Roman", serif;
+
+  --radius: 14px;
+  --shadow: 0 10px 30px -12px rgba(58, 26, 20, .28);
+  --container: 72rem;
+
+  /* Running stitch used for borders and dividers. */
+  --stitch-red: repeating-linear-gradient(90deg, var(--red) 0 10px, transparent 10px 16px);
+  --stitch-gold: repeating-linear-gradient(90deg, var(--gold-deep) 0 10px, transparent 10px 16px);
+}
+
+/* ---------- Reset & base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Woven linen texture, as on the business card. */
+  background-color: var(--paper);
+  background-image:
+    repeating-linear-gradient(0deg, rgba(214, 178, 146, .16) 0 1px, transparent 1px 9px),
+    repeating-linear-gradient(90deg, rgba(214, 178, 146, .16) 0 1px, transparent 1px 9px);
+}
+
+main { flex: 1; }
+
+img, svg { max-width: 100%; display: block; }
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: .04em;
+  margin: 0 0 .5em;
+}
+
+p { margin: 0 0 1em; }
+
+a { color: var(--red); text-underline-offset: .2em; }
+a:hover { color: var(--red-deep); }
+
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+
+.container {
+  width: min(100% - 2rem, var(--container));
+  margin-inline: auto;
+}
+
+.center { text-align: center; }
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 10;
+  padding: .5rem 1rem;
+  background: var(--ink);
+  color: var(--cream);
+  border-radius: 0 0 8px 8px;
+}
+.skip-link:focus { top: 0; }
+
+/* ---------- Buttons (with an inner running stitch) ---------- */
+.actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .8rem 1.5rem;
+  border-radius: 999px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: .9rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: transform .15s ease, background-color .15s ease, color .15s ease;
+}
+.button:hover { transform: translateY(-2px); }
+
+.button--primary {
+  background: var(--red);
+  color: var(--cream);
+  outline: 1.5px dashed rgba(255, 248, 241, .7);
+  outline-offset: -6px;
+}
+.button--primary:hover { background: var(--red-deep); color: var(--cream); }
+.button--primary:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+.button--ghost {
+  background: transparent;
+  color: var(--red);
+  box-shadow: inset 0 0 0 2px var(--red);
+}
+.button--ghost:hover { background: var(--red); color: var(--cream); }
+
+.icon { flex: none; }
+
+/* ---------- Bunting (from the logo's triangle border) ---------- */
+.bunting {
+  --flag: 56px;
+  height: 20px;
+  background:
+    linear-gradient(var(--ink-soft), var(--ink-soft)) top / 100% 1.5px no-repeat,
+    conic-gradient(from -26deg at 50% 100%, var(--red) 52deg, transparent 0) 0 0 / var(--flag) 100% repeat-x,
+    conic-gradient(from -26deg at 50% 100%, var(--gold) 52deg, transparent 0) calc(var(--flag) / 2) 0 / var(--flag) 100% repeat-x;
+}
+
+/* ---------- Section headings with stitched flourishes ---------- */
+.section-head { text-align: center; margin-bottom: 2.5rem; }
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: clamp(1.5rem, 1.1rem + 1.6vw, 2.2rem);
+  color: var(--ink);
+  text-transform: uppercase;
+}
+.section-title::before,
+.section-title::after {
+  content: "";
+  flex: 0 1 5rem;
+  height: 3px;
+  background: var(--stitch-red);
+}
+
+.section-lead {
+  max-width: 40rem;
+  margin: 0 auto;
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 1.15rem;
+}
+
+/* ---------- Placeholders for works without a photo ---------- */
+.placeholder {
+  position: relative;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: .75rem;
+  width: 100%;
+  height: 100%;
+  padding: 12%;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, .12) 0 1px, transparent 1px 6px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, .12) 0 1px, transparent 1px 6px);
+}
+.placeholder--red { background-color: var(--red); color: var(--cream); }
+.placeholder--gold { background-color: var(--gold); color: var(--ink); }
+.placeholder--linen { background-color: var(--linen); color: var(--ink-soft); }
+.placeholder--linen { background-image:
+    repeating-linear-gradient(0deg, rgba(185, 132, 69, .12) 0 1px, transparent 1px 6px),
+    repeating-linear-gradient(90deg, rgba(185, 132, 69, .12) 0 1px, transparent 1px 6px); }
+
+.placeholder-art { width: 62%; height: auto; max-height: 72%; }
+
+.placeholder-label {
+  font-family: var(--font-display);
+  font-size: .8rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  padding: .15rem .75rem;
+  border: 1.5px dashed currentColor;
+  border-radius: 999px;
+  white-space: nowrap;
+  opacity: .85;
+}

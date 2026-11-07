@@ -1,0 +1,41 @@
+{{- /*
+Renders a work as a card. Shows a stitched placeholder when no photo is uploaded yet.
+
+@context {page} page   The work page.
+@context {string} style "hoop" (round embroidery hoop) or "patch" (stitched square).
+@context {int} index   Position in the list, used to vary placeholder colours.
+*/ -}}
+{{- $p := .page }}
+{{- $style := .style | default "patch" }}
+{{- $img := partial "work-image.html" $p }}
+{{- $tints := slice "red" "gold" "linen" }}
+{{- $tint := index $tints (mod (.index | default 0) 3) }}
+<li class="work work--{{ $style }}">
+  <a href="{{ $p.RelPermalink }}" class="work-link">
+    <div class="work-frame">
+      {{- if $img }}
+        {{- $small := $img.Process "fill 480x480 Center webp q82" }}
+        {{- $large := $img.Process "fill 800x800 Center webp q82" }}
+        <img src="{{ $small.RelPermalink }}"
+             srcset="{{ $small.RelPermalink }} 480w, {{ $large.RelPermalink }} 800w"
+             sizes="(min-width: 60rem) 22rem, (min-width: 40rem) 45vw, 90vw"
+             width="480" height="480" alt="{{ $p.Params.alt | default $p.Title }}" loading="lazy">
+      {{- else }}
+        <div class="placeholder placeholder--{{ $tint }}">
+          {{- if eq $tint "red" }}
+            {{ partial "svg/heart.html" (dict "class" "placeholder-art" "fill" "#f9b34b") }}
+          {{- else if eq $tint "gold" }}
+            {{ partial "svg/sprig.html" (dict "class" "placeholder-art") }}
+          {{- else }}
+            {{ partial "svg/sun.html" (dict "class" "placeholder-art") }}
+          {{- end }}
+          <span class="placeholder-label">{{ T "photoComingSoon" }}</span>
+        </div>
+      {{- end }}
+    </div>
+    <div class="work-caption">
+      {{- with $p.Params.category }}<span class="work-category">{{ T (printf "category_%s" .) }}</span>{{ end }}
+      <h3 class="work-title">{{ $p.LinkTitle }}</h3>
+    </div>
+  </a>
+</li>

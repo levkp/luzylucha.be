@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="container page-head not-found">
+  <div class="not-found-art">{{ partial "svg/heart.html" (dict "class" "not-found-heart") }}</div>
+  <h1 class="page-title">{{ T "notFoundTitle" }}</h1>
+  <p class="section-lead">{{ T "notFoundText" }}</p>
+  <div class="actions">
+    <a class="button button--primary" href="{{ site.Home.RelPermalink }}">{{ T "backHome" }}</a>
+  </div>
+</div>
+{{ end }}

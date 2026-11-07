@@ -1,0 +1,48 @@
+<div class="bunting bunting--footer" aria-hidden="true"></div>
+<div class="footer-body">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      {{- with resources.Get "img/logo.png" }}
+        {{- $logo := .Resize "160x webp q90" }}
+        <img src="{{ $logo.RelPermalink }}" width="80" height="80" alt="" loading="lazy">
+      {{- end }}
+      <p class="footer-signature">{{ T "madeWithLove" }}</p>
+      {{ partial "svg/sprig.html" (dict "class" "footer-sprig" "petal" "#f9b34b" "heart" "#cc0000") }}
+    </div>
+
+    <div class="footer-col">
+      <h2 class="footer-title">{{ T "contact" }}</h2>
+      <ul class="contact-list">
+        {{- with site.Params.instagram }}
+        <li>
+          <a href="https://www.instagram.com/{{ . }}/" rel="me noopener">
+            {{ partial "svg/instagram.html" . }}<span>@{{ . }}</span>
+          </a>
+        </li>
+        {{- end }}
+        {{- with site.Params.email }}
+        <li>
+          <a href="mailto:{{ . }}">{{ partial "svg/mail.html" . }}<span>{{ . }}</span></a>
+        </li>
+        {{- end }}
+        <li>
+          <a href="{{ site.Home.Permalink }}">{{ partial "svg/link.html" . }}<span>{{ replaceRE `^https?://([^/]+)/?.*$` "$1" site.BaseURL }}</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h2 class="footer-title">{{ T "explore" }}</h2>
+      <ul class="footer-nav">
+        {{- range site.Menus.main }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>&copy; {{ now.Year }} {{ site.Title }} – {{ site.Params.author }}. {{ T "rights" }}</p>
+    {{ partial "language-switch.html" . }}
+  </div>
+</div>

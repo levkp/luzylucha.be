@@ -1,0 +1,80 @@
+{{ define "main" }}
+<section class="hero">
+  {{ partial "svg/sprig.html" (dict "class" "hero-sprig hero-sprig--right" "petal" "#f9b34b" "heart" "#cc0000") }}
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">{{ site.Title }}</p>
+      <h1 class="hero-title">{{ .Params.tagline }}</h1>
+      <p class="hero-subtitle">{{ .Params.subtitle }}</p>
+      <div class="hero-intro">{{ .Content }}</div>
+      <div class="actions">
+        {{- with site.GetPage "/works" }}
+          <a class="button button--primary" href="{{ .RelPermalink }}">{{ T "viewAllWorks" }}</a>
+        {{- end }}
+        {{- with site.GetPage "/about" }}
+          <a class="button button--ghost" href="{{ .RelPermalink }}#order">{{ T "orderCta" }}</a>
+        {{- end }}
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hoop hoop--hero">
+        <div class="hoop-fabric">
+          {{ partial "svg/sun.html" (dict "class" "hero-sun") }}
+        </div>
+      </div>
+      {{ partial "svg/heart.html" (dict "class" "hero-heart") }}
+      {{ partial "svg/sprig.html" (dict "class" "hero-visual-sprig") }}
+    </div>
+  </div>
+</section>
+
+{{- with site.GetPage "/works" }}
+{{- $featured := where .Pages "Params.featured" true }}
+{{- if not $featured }}{{ $featured = .Pages }}{{ end }}
+<section class="featured">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="section-title"><span>{{ $.Params.featuredTitle }}</span></h2>
+      {{- with $.Params.featuredIntro }}<p class="section-lead">{{ . }}</p>{{ end }}
+    </header>
+    <ul class="works-grid works-grid--hoops">
+      {{- range $i, $p := first 6 $featured }}
+        {{ partial "work-card.html" (dict "page" $p "style" "hoop" "index" $i) }}
+      {{- end }}
+    </ul>
+    <p class="center"><a class="button button--primary" href="{{ .RelPermalink }}">{{ T "viewAllWorks" }}</a></p>
+  </div>
+</section>
+{{- end }}
+
+{{- with .Params.steps }}
+<section class="steps">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="section-title"><span>{{ $.Params.stepsTitle }}</span></h2>
+    </header>
+    <ol class="steps-list">
+      {{- range $i, $s := . }}
+      <li class="step">
+        <span class="step-number" aria-hidden="true">{{ add $i 1 }}</span>
+        <h3>{{ $s.title }}</h3>
+        <p>{{ $s.text }}</p>
+      </li>
+      {{- end }}
+    </ol>
+  </div>
+</section>
+{{- end }}
+
+{{- with .Params.quote }}
+<section class="quote">
+  <div class="container">
+    <figure class="quote-patch">
+      {{ partial "svg/heart.html" (dict "class" "quote-heart") }}
+      <blockquote><p>{{ . }}</p></blockquote>
+      <figcaption>{{ T "madeWithLove" }}</figcaption>
+    </figure>
+  </div>
+</section>
+{{- end }}
+{{ end }}

@@ -1,0 +1,17 @@
+{{- /* Links to every language; falls back to that language's home page when this page is not translated. */ -}}
+<nav class="lang-switch" aria-label="{{ T "languageNav" }}">
+  <ul>
+    {{- range hugo.Sites }}
+      {{- $lang := .Language.Lang }}
+      {{- $href := .Home.RelPermalink }}
+      {{- range $.AllTranslations }}{{ if eq .Language.Lang $lang }}{{ $href = .RelPermalink }}{{ end }}{{ end }}
+      <li>
+        {{- if eq $lang site.Language.Lang }}
+          <span aria-current="true" title="{{ .Language.Label }}">{{ upper $lang }}</span>
+        {{- else }}
+          <a href="{{ $href }}" hreflang="{{ .Language.Locale }}" lang="{{ .Language.Locale }}" title="{{ .Language.Label }}">{{ upper $lang }}</a>
+        {{- end }}
+      </li>
+    {{- end }}
+  </ul>
+</nav>
