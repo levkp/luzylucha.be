@@ -1,5 +1,7 @@
 {{- $description := or .Description .Params.subtitle site.Params.description }}
-{{- $title := cond .IsHome (printf "%s – %s" site.Title (.Params.tagline | default "")) (printf "%s | %s" .Title site.Title) }}
+{{- $pageTitle := .Title }}
+{{- if eq .Kind "term" }}{{ $pageTitle = printf "%s – %s" (site.GetPage "/works").Title (partial "tag-label.html" .Data.Term) }}{{ end }}
+{{- $title := cond .IsHome (printf "%s – %s" site.Title (.Params.tagline | default "")) (printf "%s | %s" $pageTitle site.Title) }}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ $title }}</title>

@@ -27,3 +27,12 @@ messageInstagram = 'Envoyer un message sur Instagram'
 notFoundTitle = 'Oups, un fil qui dépasse'
 notFoundText = 'Cette page n’existe pas (ou plus). Vous trouverez peut-être votre bonheur sur la page d’accueil.'
 backHome = 'Retour à l’accueil'
+
+# Tag filter on the creations page
+filterLabel = 'Filtrer par thème'
+filterAll = 'Tout'
+tags = 'Thèmes'
+tag_brooch = 'Broches'
+tag_textile-art = 'Art textile'
+tag_memories = 'Souvenirs'
+tag_baby-and-children = 'Bébé & enfants'

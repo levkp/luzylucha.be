@@ -15,7 +15,7 @@
   background: var(--stitch-red);
 }
 
-.section-works .prose { text-align: center; margin-inline: auto; margin-bottom: 3rem; color: var(--ink-soft); }
+.works-intro { text-align: center; margin-inline: auto; margin-bottom: 2rem; color: var(--ink-soft); }
 
 .prose { max-width: 42rem; }
 .prose h2 {

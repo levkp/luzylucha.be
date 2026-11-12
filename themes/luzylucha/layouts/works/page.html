@@ -27,10 +27,16 @@
       <h1 class="page-title">{{ .Title }}</h1>
       <div class="prose">{{ .Content }}</div>
 
-      {{- if or .Params.materials .Params.size }}
+      {{- if or .Params.materials .Params.size .Params.tags }}
       <dl class="work-specs">
         {{- with .Params.materials }}<dt>{{ T "materials" }}</dt><dd>{{ . }}</dd>{{ end }}
         {{- with .Params.size }}<dt>{{ T "size" }}</dt><dd>{{ . }}</dd>{{ end }}
+        {{- with .GetTerms "tags" }}
+        <dt>{{ T "tags" }}</dt>
+        <dd><ul class="work-tags">
+          {{- range . }}<li><a href="{{ .RelPermalink }}">{{ partial "tag-label.html" .Data.Term }}</a></li>{{ end }}
+        </ul></dd>
+        {{- end }}
       </dl>
       {{- end }}
 

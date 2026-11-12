@@ -4,13 +4,24 @@ theme = 'luzylucha'
 
 defaultContentLanguage = 'nl'
 defaultContentLanguageInSubdir = false
-disableKinds = ['taxonomy', 'term', 'rss']
+disableKinds = ['taxonomy', 'rss']
+
+# Themes used to filter the creations. Term keys are shared by all languages;
+# their labels live in the i18n files as tag_<key>.
+[taxonomies]
+  tag = 'tags'
+
+[permalinks.term]
+  tags = '/works/tags/:slug/'
 
 [params]
   author = 'Lucia Dewitte'
   instagram = 'luzylucha'
   # Fill in to show an e-mail address in the footer and on the contact sections.
   email = ''
+  # Tags shown in the filter on the creations page, in this order. Tags without any
+  # creation yet are shown greyed out with a count of 0. Labels: tag_<key> in i18n.
+  filterTags = ['brooch', 'textile-art', 'memories', 'baby-and-children']
 
 [languages]
   [languages.nl]

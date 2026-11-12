@@ -27,3 +27,12 @@ messageInstagram = 'Stuur een bericht via Instagram'
 notFoundTitle = 'Oeps, een losse draad'
 notFoundText = 'Deze pagina bestaat niet (meer). Misschien vind je wat je zoekt op de startpagina.'
 backHome = 'Naar de startpagina'
+
+# Tag filter on the creations page
+filterLabel = 'Filter op thema'
+filterAll = 'Alles'
+tags = 'Thema’s'
+tag_brooch = 'Broches'
+tag_textile-art = 'Textielkunst'
+tag_memories = 'Herinneringen'
+tag_baby-and-children = 'Baby & kinderen'

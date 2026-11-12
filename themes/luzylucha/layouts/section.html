@@ -1,16 +1,3 @@
 {{ define "main" }}
-<div class="container page-head">
-  <h1 class="page-title">{{ .Title }}</h1>
-  {{- with .Description }}<p class="section-lead">{{ . }}</p>{{ end }}
-</div>
-<div class="container prose">
-  {{ .Content }}
-</div>
-<div class="container">
-  <ul class="works-grid works-grid--patches">
-    {{- range $i, $p := .Pages }}
-      {{ partial "work-card.html" (dict "page" $p "style" "patch" "index" $i) }}
-    {{- end }}
-  </ul>
-</div>
+{{ partial "works-listing.html" (dict "section" . "pages" .Pages "active" "") }}
 {{ end }}

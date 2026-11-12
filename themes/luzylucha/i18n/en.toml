@@ -27,3 +27,12 @@ messageInstagram = 'Send a message on Instagram'
 notFoundTitle = 'Oops, a loose thread'
 notFoundText = 'This page doesn’t exist (anymore). Perhaps you’ll find what you’re looking for on the home page.'
 backHome = 'Go to the home page'
+
+# Tag filter on the creations page
+filterLabel = 'Filter by theme'
+filterAll = 'All'
+tags = 'Themes'
+tag_brooch = 'Brooches'
+tag_textile-art = 'Textile art'
+tag_memories = 'Memories'
+tag_baby-and-children = 'Baby & children'

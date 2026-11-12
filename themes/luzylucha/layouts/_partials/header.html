@@ -11,6 +11,8 @@
     <ul>
       {{- range site.Menus.main }}
         {{- $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
+        {{- /* Tag pages belong to the creations. */}}
+        {{- if and (eq $.Kind "term") .Page }}{{ if eq .Page.Section "works" }}{{ $active = true }}{{ end }}{{ end }}
         <li><a href="{{ .URL }}"{{ if $active }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a></li>
       {{- end }}
     </ul>
