@@ -1,0 +1,8 @@
+{{- /*
+Returns the translated label of a tag.
+
+@context {string} The tag key, e.g. "textile-art".
+@returns {string}
+*/ -}}
+{{- $label := T (printf "tag_%s" .) }}
+{{- return ($label | default (humanize .)) }}

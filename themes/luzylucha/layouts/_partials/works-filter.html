@@ -1,0 +1,28 @@
+{{- /*
+Filter bar for the creations: links to "all" and to each tag page.
+Filtering happens through static tag pages, so no JavaScript is needed.
+
+Tags are listed in the order of site.Params.filterTags; a tag without creations
+has no page yet and is shown greyed out with a count of 0. Tags used on
+creations but missing from filterTags are appended at the end.
+
+@context {page} section The works section page.
+@context {string} active The key of the active tag, or "" for all creations.
+*/ -}}
+{{- $active := .active | default "" }}
+{{- $keys := site.Params.filterTags | default slice }}
+{{- range site.Taxonomies.tags.ByCount }}{{ if not (in $keys .Term) }}{{ $keys = $keys | append .Term }}{{ end }}{{ end }}
+<nav class="works-filter" aria-label="{{ T "filterLabel" }}">
+  <p class="works-filter-label">{{ T "filterLabel" }}</p>
+  <ul>
+    <li><a href="{{ .section.RelPermalink }}"{{ if not $active }} aria-current="page"{{ end }}>{{ T "filterAll" }} <span class="works-filter-count">{{ len .section.Pages }}</span></a></li>
+    {{- range $keys }}
+      {{- $works := index site.Taxonomies.tags . }}
+      {{- if $works }}
+        <li><a href="{{ $works.Page.RelPermalink }}"{{ if eq . $active }} aria-current="page"{{ end }}>{{ partial "tag-label.html" . }} <span class="works-filter-count">{{ $works.Count }}</span></a></li>
+      {{- else }}
+        <li><span class="works-filter-empty">{{ partial "tag-label.html" . }} <span class="works-filter-count">0</span></span></li>
+      {{- end }}
+    {{- end }}
+  </ul>
+</nav>

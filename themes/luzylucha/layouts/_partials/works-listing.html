@@ -1,0 +1,23 @@
+{{- /*
+Creations overview: section title and intro, tag filter and the grid of works.
+
+@context {page} section The works section page (title and intro text).
+@context {pages} pages  The works to show.
+@context {string} active The key of the active tag, or "".
+*/ -}}
+{{- $s := .section }}
+<div class="container page-head">
+  <h1 class="page-title">{{ $s.Title }}</h1>
+  {{- with $s.Description }}<p class="section-lead">{{ . }}</p>{{ end }}
+</div>
+<div class="container prose works-intro">
+  {{ $s.Content }}
+</div>
+<div class="container">
+  {{ partial "works-filter.html" (dict "section" $s "active" .active) }}
+  <ul class="works-grid works-grid--patches">
+    {{- range $i, $p := .pages }}
+      {{ partial "work-card.html" (dict "page" $p "style" "patch" "index" $i) }}
+    {{- end }}
+  </ul>
+</div>
