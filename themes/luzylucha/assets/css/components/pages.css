@@ -28,8 +28,10 @@
 .prose h3 { font-size: 1.1rem; margin-top: 1.5rem; }
 .prose ul, .prose ol { padding-left: 1.25rem; }
 .prose li { margin-bottom: .35rem; }
+/* Add {.img-half} on the line after a Markdown image to show it at half width, centred. */
+.prose .img-half img { width: 50%; margin-inline: auto; }
 .prose li::marker { color: var(--red); }
-.prose img { border-radius: var(--radius); margin-block: 1.5rem; }
+.prose img { display: block; max-width: 100%; height: auto; border-radius: var(--radius); margin-block: 1.5rem; }
 
 .page-article .prose { margin-inline: auto; }
 

@@ -7,6 +7,9 @@ description = 'Wie er achter de naald zit, en hoe je een uniek werk bestelt.'
   weight = 30
 +++
 
+![Lucia Dewitte aan haar werktafel, bezig met een stukje rood vilt](lucia.jpg)
+{.img-half}
+
 ## Hallo, ik ben Lucia
 
 Achter Luz y Lucha zit ik, Lucia Dewitte. Wat begon als een hobby, groeide uit tot een passie voor alles wat met naald en draad te maken heeft. Ik hou van warme kleuren, unieke verhalen, symboliek en kleine details die een glimlach op je gezicht toveren.

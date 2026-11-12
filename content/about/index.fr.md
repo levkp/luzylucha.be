@@ -7,6 +7,9 @@ description = 'Qui se cache derrière l’aiguille, et comment commander une pi�
   weight = 30
 +++
 
+![Lucia Dewitte à sa table de travail, en train de coudre un morceau de feutrine rouge](lucia.jpg)
+{.img-half}
+
 ## Bonjour, je suis Lucia
 
 Derrière Luz y Lucha, il y a moi, Lucia Dewitte. Ce qui a commencé comme un passe-temps est devenu une passion pour tout ce qui touche au fil et à l’aiguille. J’aime les couleurs chaudes, les histoires uniques, la symbolique et les petits détails qui font naître un sourire sur votre visage.

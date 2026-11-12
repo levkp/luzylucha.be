@@ -7,6 +7,9 @@ description = 'Who’s behind the needle, and how to order a unique piece.'
   weight = 30
 +++
 
+![Lucia Dewitte at her worktable, stitching a piece of red felt](lucia.jpg)
+{.img-half}
+
 ## Hello, I’m Lucia
 
 I’m Lucia Dewitte, the maker behind Luz y Lucha. What started as a hobby grew into a passion for everything needle and thread. I love warm colours, unique stories, symbolism and the little details that put a smile on your face.
