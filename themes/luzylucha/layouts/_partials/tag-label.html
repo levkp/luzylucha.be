@@ -1,8 +1,10 @@
 {{- /*
-Returns the translated label of a tag.
+Returns the name of a tag in the current language: the title of its page in
+content/tags/<key>/, or the humanized key when that page doesn't exist.
 
-@context {string} The tag key, e.g. "textile-art".
+@context {string} The tag key, e.g. "baby-and-children".
 @returns {string}
 */ -}}
-{{- $label := T (printf "tag_%s" .) }}
-{{- return ($label | default (humanize .)) }}
+{{- $label := humanize . }}
+{{- with site.GetPage (printf "/tags/%s" .) }}{{ $label = .LinkTitle }}{{ end }}
+{{- return $label }}

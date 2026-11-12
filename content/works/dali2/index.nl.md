@@ -4,5 +4,5 @@ date = 2026-11-12
 weight = 5
 featured = true
 category = 'brooch'
-tags = ['brooch', 'textile-art']
+tags = ['embroidery']
 +++

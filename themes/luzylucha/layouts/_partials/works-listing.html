@@ -4,6 +4,7 @@ Creations overview: section title and intro, tag filter and the grid of works.
 @context {page} section The works section page (title and intro text).
 @context {pages} pages  The works to show.
 @context {string} active The key of the active tag, or "".
+@context {html} intro   Optional intro text of the active tag, shown under the filter.
 */ -}}
 {{- $s := .section }}
 <div class="container page-head">
@@ -15,9 +16,14 @@ Creations overview: section title and intro, tag filter and the grid of works.
 </div>
 <div class="container">
   {{ partial "works-filter.html" (dict "section" $s "active" .active) }}
+  {{- with .intro }}<div class="prose works-tag-intro">{{ . }}</div>{{ end }}
+  {{- if .pages }}
   <ul class="works-grid works-grid--patches">
     {{- range $i, $p := .pages }}
       {{ partial "work-card.html" (dict "page" $p "style" "patch" "index" $i) }}
     {{- end }}
   </ul>
+  {{- else }}
+  <p class="works-empty">{{ T "noWorksYet" }}</p>
+  {{- end }}
 </div>

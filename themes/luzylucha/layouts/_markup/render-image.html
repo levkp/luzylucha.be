@@ -1,0 +1,14 @@
+{{- /*
+Markdown images. Images stored next to the page are resized and converted to WebP;
+other images are rendered as they are.
+*/ -}}
+{{- $img := .Page.Resources.Get .Destination }}
+{{- if and $img (ne $img.MediaType.SubType "svg") }}
+  {{- $md := $img.Process "fit 700x700 webp q82" }}
+  {{- $lg := $img.Process "fit 1300x1300 webp q82" }}
+<img src="{{ $md.RelPermalink }}" srcset="{{ $md.RelPermalink }} {{ $md.Width }}w, {{ $lg.RelPermalink }} {{ $lg.Width }}w"
+     sizes="(min-width: 48rem) 38rem, 90vw" width="{{ $md.Width }}" height="{{ $md.Height }}"
+     alt="{{ .PlainText }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy">
+{{- else }}
+<img src="{{ .Destination | safeURL }}" alt="{{ .PlainText }}"{{ with .Title }} title="{{ . }}"{{ end }}>
+{{- end -}}

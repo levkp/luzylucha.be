@@ -1,4 +1,4 @@
 {{ define "main" }}
-{{- /* A tag page: the creations overview, filtered on this tag. */}}
-{{ partial "works-listing.html" (dict "section" (site.GetPage "/works") "pages" .Pages "active" .Data.Term) }}
+{{- /* A tag page: the creations overview, filtered on this tag, with the tag's own intro text. */}}
+{{ partial "works-listing.html" (dict "section" (site.GetPage "/works") "pages" .Pages "active" .Data.Term "intro" .Content) }}
 {{ end }}
