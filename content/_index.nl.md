@@ -1,7 +1,7 @@
 +++
 title = 'Luz y Lucha'
 tagline = 'Unieke textielcreaties'
-subtitle = 'Geborduurde broches – bijzondere gepersonaliseerde cadeaus'
+subtitle = 'Met draad, kleur en een eigenzinnige blik.'
 featuredTitle = 'Uit het atelier'
 featuredIntro = 'Een greep uit mijn recentste creaties, steek voor steek met de hand gemaakt.'
 stepsTitle = 'Jouw cadeau op maat'
@@ -24,4 +24,8 @@ quote = 'Elke steek vertelt een verhaal. Geen twee broches zijn hetzelfde – ne
   text = 'Je ontvangt een uniek, met liefde gemaakt werk – klaar om te dragen of cadeau te doen.'
 +++
 
-Welkom in mijn naai- en borduuratelier, waar verhalen tot leven komen in draad en stof. Ik maak kleurrijke broches, patchwork en textielkunst, en creëer graag iets persoonlijks voor jou of iemand die je graag ziet.
+Welkom in het eigenzinnige textielatelier Luz y Lucha. Beelden krijgen bij mij een nieuwe betekenis in handgeborduurde
+broches, tassen en hebbedingetjes, kledij krijgt een tweede leven en persoonlijke herinneringen worden omgezet in 
+tastbare creaties zoals een geboortedeken of een koesterdeken. Het is een creatief atelier waar kunst, ambacht en
+persoonlijke verhalen samenkomen. Soms speels, soms reels, soms ontroerend maar altijd uniek en met een verhaal,
+een stukje Luz y Lucha.

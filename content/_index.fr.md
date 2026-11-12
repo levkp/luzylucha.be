@@ -1,7 +1,7 @@
 +++
 title = 'Luz y Lucha'
 tagline = 'Créations textiles uniques'
-subtitle = 'Broches brodées – des cadeaux personnalisés d’exception'
+subtitle = 'Avec du fil, de la couleur et un regard singulier.'
 featuredTitle = 'De l’atelier'
 featuredIntro = 'Une sélection de mes dernières créations, faites main point par point.'
 stepsTitle = 'Votre cadeau sur mesure'
@@ -24,4 +24,8 @@ quote = 'Chaque point raconte une histoire. Aucune broche ne ressemble à une au
   text = 'Vous recevez une pièce unique, faite avec amour – prête à être portée ou offerte.'
 +++
 
-Bienvenue dans mon atelier de couture et de broderie, où les histoires prennent vie en fil et en tissu. Je crée des broches colorées, du patchwork et de l’art textile, et j’aime réaliser quelque chose de personnel pour vous ou pour quelqu’un qui vous est cher.
+Bienvenue chez Luz y Lucha, un atelier textile singulier. Ici, les images prennent un nouveau sens dans des broches,
+des sacs et des petits trésors brodés à la main, les vêtements connaissent une seconde vie et les souvenirs personnels
+se transforment en créations tangibles, comme une couverture de naissance ou une couverture doudou. C’est un atelier
+créatif où l’art, l’artisanat et les histoires personnelles se rencontrent. Parfois ludique, parfois rebelle, parfois
+émouvant, mais toujours unique et porteur d’une histoire : un petit morceau de Luz y Lucha.
