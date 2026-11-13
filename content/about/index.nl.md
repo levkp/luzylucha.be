@@ -1,10 +1,10 @@
 +++
-title = 'Over mij & bestellen'
+title = 'Over mij'
 description = ''
 
 [menus.main]
   name = 'Over mij'
-  weight = 30
+  weight = 40
 +++
 
 ![Lucia Dewitte aan haar werktafel, bezig met een stukje rood vilt](lucia.jpg)
@@ -39,14 +39,3 @@ Voor mij sluiten die twee kanten elkaar niet uit. Integendeel. Licht is waar ik 
 Met aandacht gemaakt. Met ruimte voor imperfectie. Met liefde voor het ambacht en een gezonde dosis eigenzinnigheid. Geen massaproductie. Geen wegwerpspullen. Geen twee keer hetzelfde. Wel kleine creaties met een eigen verhaal, soms zacht en ontroerend, soms rebels en uitgesproken.
 
 Luz y lucha - een beetje schoonheid, een beetje rebellie en vooral veel draad.
-
-## Bestellen {#order}
-
-Wil je een van mijn [creaties](../works/) of heb je een idee voor een gepersonaliseerd cadeau? Zo gaat het in zijn werk:
-
-1. **Neem contact op** via Instagram ([@luzylucha](https://www.instagram.com/luzylucha/)) en vertel me wat je zoekt.
-2. **We bespreken samen** het ontwerp, de kleuren, de prijs en de timing.
-3. **Ik ga aan de slag** en hou je op de hoogte van de vorderingen.
-4. **Je ontvangt je creatie**, mooi verpakt en klaar om cadeau te doen.
-
-Reken voor werk op maat op enkele weken, afhankelijk van de grootte van het ontwerp. Heb je het voor een bepaalde datum nodig? Laat het me zeker weten.

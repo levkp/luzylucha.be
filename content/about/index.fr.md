@@ -1,10 +1,10 @@
 +++
-title = 'À propos & commandes'
+title = 'À propos'
 description = ''
 
 [menus.main]
   name = 'À propos'
-  weight = 30
+  weight = 40
 +++
 
 ![Lucia Dewitte à sa table de travail, en train de coudre un morceau de feutrine rouge](lucia.jpg)
@@ -39,14 +39,3 @@ Pour moi, ces deux facettes ne s’excluent pas. Au contraire. La lumière est c
 Fait avec attention. Avec de la place pour l’imperfection. Avec l’amour du métier et une bonne dose de singularité. Pas de production de masse. Pas d’objets jetables. Jamais deux fois la même chose. Mais de petites créations qui ont leur propre histoire, parfois douces et émouvantes, parfois rebelles et engagées.
 
 Luz y Lucha – un peu de beauté, un peu de rébellion et surtout beaucoup de fil.
-
-## Commander {#order}
-
-Vous souhaitez l’une de mes [créations](../works/) ou vous avez une idée de cadeau personnalisé ? Voici comment procéder :
-
-1. **Contactez-moi** sur Instagram ([@luzylucha](https://www.instagram.com/luzylucha/)) et dites-moi ce que vous cherchez.
-2. **Nous discutons ensemble** du design, des couleurs, du prix et du délai.
-3. **Je me mets au travail** et vous tiens informé·e de l’avancement.
-4. **Vous recevez votre création**, joliment emballée et prête à offrir.
-
-Comptez quelques semaines pour une création sur mesure, selon la taille du motif. Vous en avez besoin pour une date précise ? N’hésitez pas à me le dire.

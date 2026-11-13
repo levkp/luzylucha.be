@@ -11,8 +11,8 @@
         {{- with site.GetPage "/works" }}
           <a class="button button--primary" href="{{ .RelPermalink }}">{{ T "viewAllWorks" }}</a>
         {{- end }}
-        {{- with site.GetPage "/about" }}
-          <a class="button button--ghost" href="{{ .RelPermalink }}#order">{{ T "orderCta" }}</a>
+        {{- with site.GetPage "/order" }}
+          <a class="button button--ghost" href="{{ .RelPermalink }}">{{ T "orderCta" }}</a>
         {{- end }}
       </div>
     </div>
