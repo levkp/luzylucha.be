@@ -3,7 +3,7 @@ title = 'Olifant'
 date = 2026-11-12
 weight = 12
 featured = true
-category = 'brooch'
+category = 'textile-art'
 tags = ['embroidery']
 images = ['elephant.jpg', 'elephant-framed.jpg']
 +++
