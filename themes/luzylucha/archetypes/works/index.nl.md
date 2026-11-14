@@ -10,8 +10,11 @@ category = 'brooch'
 tags = ['brooch']
 materials = ''
 size = ''
-# Optional: file name of the photo in this folder. Defaults to the first image found.
+# Photos: every image in this folder is shown on the page of this work.
+# Optional: file name of the main photo (used on the cards). Defaults to the first image found.
 # image = 'photo.jpg'
+# Optional: the photos to show, in this order (the first one is the main photo).
+# images = ['front.jpg', 'back.jpg']
 # alt = ''
 +++
 

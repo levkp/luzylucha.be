@@ -176,6 +176,78 @@
 .work-detail-media img,
 .work-detail-media .placeholder { border-radius: 8px; width: 100%; height: auto; }
 .placeholder--large { aspect-ratio: 1; }
+
+/* Several photos: main photo with stitched thumbnails below, switched with
+   hidden radio buttons (no JavaScript). Markup per photo: input, label, slide.
+   All photos share one grid cell, so the frame keeps the height of the tallest
+   photo and the page doesn't jump when switching. */
+.work-gallery {
+  display: grid;
+  /* One column per thumbnail (shrinking when space runs out), then the rest. */
+  grid-template-columns: repeat(var(--photos, 2), minmax(0, 4.5rem)) 1fr;
+  gap: .9rem .75rem;
+}
+.work-gallery-input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+.work-gallery-slide {
+  grid-area: 1 / 1 / 2 / -1;
+  align-self: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s ease, visibility 0s .35s;
+}
+.work-gallery-input:checked + .work-gallery-thumb + .work-gallery-slide {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .35s ease;
+}
+.work-gallery-thumb {
+  grid-row: 2;
+  position: relative;
+  min-width: 2.5rem;
+  aspect-ratio: 1;
+  padding: 4px;
+  border-radius: 10px;
+  background: var(--linen);
+  cursor: pointer;
+  opacity: .7;
+  transition: opacity .2s ease, transform .2s ease, background .2s ease;
+}
+.work-gallery-thumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; }
+.work-gallery-thumb:hover { opacity: 1; transform: translateY(-2px) rotate(-2deg); }
+.work-gallery-input:checked + .work-gallery-thumb {
+  opacity: 1;
+  background: var(--gold);
+}
+/* Running stitch around the selected thumbnail, as on the photo frame. */
+.work-gallery-input:checked + .work-gallery-thumb::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: 9px;
+  border: 1.5px dashed var(--red);
+}
+.work-gallery-input:focus-visible + .work-gallery-thumb { outline: 3px solid var(--red); outline-offset: 6px; }
+@media (prefers-reduced-motion: reduce) {
+  .work-gallery-slide,
+  .work-gallery-input:checked + .work-gallery-thumb + .work-gallery-slide { transition: none; }
+}
+
+/* Hidden visually, still read by screen readers. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .placeholder--large .placeholder-art { width: 50%; }
 
 .work-detail-text .page-title { font-size: clamp(1.8rem, 1.3rem + 2vw, 2.6rem); }

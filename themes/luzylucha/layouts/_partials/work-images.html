@@ -1,0 +1,27 @@
+{{- /*
+Returns all image resources of a work, in display order.
+When the front matter "images" (a list of files in the bundle) is set, that order is used.
+Otherwise the main image (see work-image.html) comes first, followed by the other
+images in the page bundle sorted by file name.
+
+@context {page} The work page.
+@returns {slice}
+*/ -}}
+{{- $imgs := slice }}
+{{- if .IsPage }}
+  {{- with .Params.images }}
+    {{- range . }}
+      {{- with $.Resources.Get . }}{{ $imgs = $imgs | append . }}{{ end }}
+    {{- end }}
+  {{- end }}
+  {{- if not $imgs }}
+    {{- with partial "work-image.html" . }}
+      {{- $main := . }}
+      {{- $imgs = slice $main }}
+      {{- range sort ($.Resources.ByType "image") "Name" }}
+        {{- if ne .Name $main.Name }}{{ $imgs = $imgs | append . }}{{ end }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- return $imgs }}

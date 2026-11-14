@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Luzylucha.be
 
-This is the source code for the luzylucha.be website, made using Hugo. Luzy Lucha makes artisanal embroideries, and this
+This is the source code for the luzylucha.be website, made using Hugo. Luz y Lucha makes artisanal embroideries, and this
 website showcases some of her works, as well as practical information for example contact information and how to
 buy her products.
 
