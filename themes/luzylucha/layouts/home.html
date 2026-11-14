@@ -9,10 +9,10 @@
       <div class="hero-intro">{{ .Content }}</div>
       <div class="actions">
         {{- with site.GetPage "/works" }}
-          <a class="button button--primary" href="{{ .RelPermalink }}">{{ T "viewAllWorks" }}</a>
+          <a class="button button--primary" href="{{ .RelPermalink }}">Bekijk alle creaties</a>
         {{- end }}
         {{- with site.GetPage "/order" }}
-          <a class="button button--ghost" href="{{ .RelPermalink }}">{{ T "orderCta" }}</a>
+          <a class="button button--ghost" href="{{ .RelPermalink }}">Een cadeau bestellen</a>
         {{- end }}
       </div>
     </div>
@@ -43,7 +43,7 @@
         {{ partial "work-card.html" (dict "page" $p "style" "hoop" "index" $i) }}
       {{- end }}
     </ul>
-    <p class="center"><a class="button button--primary" href="{{ .RelPermalink }}">{{ T "viewAllWorks" }}</a></p>
+    <p class="center"><a class="button button--primary" href="{{ .RelPermalink }}">Bekijk alle creaties</a></p>
   </div>
 </section>
 {{- end }}
@@ -73,7 +73,7 @@
     <figure class="quote-patch">
       {{ partial "svg/heart.html" (dict "class" "quote-heart") }}
       <blockquote><p>{{ . }}</p></blockquote>
-      <figcaption>{{ T "madeWithLove" }}</figcaption>
+      <figcaption>Met liefde handgemaakt door Lucia Dewitte</figcaption>
     </figure>
   </div>
 </section>

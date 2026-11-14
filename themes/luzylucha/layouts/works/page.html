@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{- $imgs := partial "work-images.html" . }}
 <article class="container work-detail">
-  <p class="breadcrumb"><a href="{{ .Parent.RelPermalink }}">← {{ T "backToWorks" }}</a></p>
+  <p class="breadcrumb"><a href="{{ .Parent.RelPermalink }}">← Terug naar alle creaties</a></p>
 
   <div class="work-detail-grid">
     <figure class="work-detail-media">
@@ -19,14 +19,14 @@
             <input type="radio" class="work-gallery-input" name="work-photo" id="work-photo-{{ $n }}"{{ if eq $i 0 }} checked{{ end }}>
             <label class="work-gallery-thumb" for="work-photo-{{ $n }}">
               <img src="{{ $th.RelPermalink }}" width="80" height="80" alt="">
-              <span class="visually-hidden">{{ T "photoNofTotal" (dict "n" $n "total" (len $imgs)) }}</span>
+              <span class="visually-hidden">Foto {{ $n }} van {{ len $imgs }}</span>
             </label>
             <a href="{{ $lg.RelPermalink }}" class="work-gallery-slide">
               <img src="{{ $md.RelPermalink }}"
                    srcset="{{ $md.RelPermalink }} {{ $md.Width }}w, {{ $lg.RelPermalink }} {{ $lg.Width }}w"
                    sizes="{{ $sizes }}"
                    width="{{ $md.Width }}" height="{{ $md.Height }}"
-                   alt="{{ $alt }} ({{ T "photoNofTotal" (dict "n" $n "total" (len $imgs)) }})">
+                   alt="{{ $alt }} (Foto {{ $n }} van {{ len $imgs }})">
             </a>
           {{- end }}
         </div>
@@ -43,22 +43,22 @@
       {{- else }}
         <div class="placeholder placeholder--linen placeholder--large">
           {{ partial "svg/sun.html" (dict "class" "placeholder-art") }}
-          <span class="placeholder-label">{{ T "photoComingSoon" }}</span>
+          <span class="placeholder-label">Foto volgt</span>
         </div>
       {{- end }}
     </figure>
 
     <div class="work-detail-text">
-      {{- with .Params.category }}<p class="work-category">{{ T (printf "category_%s" .) }}</p>{{ end }}
+      {{- with .Params.category }}<p class="work-category">{{ partial "category-label.html" . }}</p>{{ end }}
       <h1 class="page-title">{{ .Title }}</h1>
       <div class="prose">{{ .Content }}</div>
 
       {{- if or .Params.materials .Params.size .Params.tags }}
       <dl class="work-specs">
-        {{- with .Params.materials }}<dt>{{ T "materials" }}</dt><dd>{{ . }}</dd>{{ end }}
-        {{- with .Params.size }}<dt>{{ T "size" }}</dt><dd>{{ . }}</dd>{{ end }}
+        {{- with .Params.materials }}<dt>Materialen</dt><dd>{{ . }}</dd>{{ end }}
+        {{- with .Params.size }}<dt>Afmetingen</dt><dd>{{ . }}</dd>{{ end }}
         {{- with .GetTerms "tags" }}
-        <dt>{{ T "tags" }}</dt>
+        <dt>Thema’s</dt>
         <dd><ul class="work-tags">
           {{- range . }}<li><a href="{{ .RelPermalink }}">{{ partial "tag-label.html" .Data.Term }}</a></li>{{ end }}
         </ul></dd>
@@ -67,14 +67,14 @@
       {{- end }}
 
       <aside class="interest">
-        <h2>{{ T "interestedTitle" }}</h2>
-        <p>{{ T "interestedText" }}</p>
+        <h2>Iets gelijkaardigs voor jou?</h2>
+        <p>Elk stuk is uniek, maar ik maak graag een creatie op maat. Stuur me een bericht met je idee.</p>
         <div class="actions">
           {{- with site.Params.instagram }}
-            <a class="button button--primary" href="https://ig.me/m/{{ . }}" rel="noopener">{{ partial "svg/instagram.html" . }} {{ T "messageInstagram" }}</a>
+            <a class="button button--primary" href="https://ig.me/m/{{ . }}" rel="noopener">{{ partial "svg/instagram.html" . }} Stuur een bericht via Instagram</a>
           {{- end }}
           {{- with site.Params.email }}
-            <a class="button button--ghost" href="mailto:{{ . }}?subject={{ $.Title | urlquery }}">{{ partial "svg/mail.html" . }} {{ T "email" }}</a>
+            <a class="button button--ghost" href="mailto:{{ . }}?subject={{ $.Title | urlquery }}">{{ partial "svg/mail.html" . }} E-mail</a>
           {{- end }}
         </div>
       </aside>
@@ -82,8 +82,8 @@
   </div>
 
   <nav class="pager">
-    {{- with .PrevInSection }}<a class="pager-prev" href="{{ .RelPermalink }}" rel="prev"><span>{{ T "previous" }}</span>{{ .LinkTitle }}</a>{{ end }}
-    {{- with .NextInSection }}<a class="pager-next" href="{{ .RelPermalink }}" rel="next"><span>{{ T "next" }}</span>{{ .LinkTitle }}</a>{{ end }}
+    {{- with .PrevInSection }}<a class="pager-prev" href="{{ .RelPermalink }}" rel="prev"><span>Vorige</span>{{ .LinkTitle }}</a>{{ end }}
+    {{- with .NextInSection }}<a class="pager-next" href="{{ .RelPermalink }}" rel="next"><span>Volgende</span>{{ .LinkTitle }}</a>{{ end }}
   </nav>
 </article>
 {{ end }}

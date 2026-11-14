@@ -7,7 +7,7 @@
     <span class="brand-name">{{ site.Title }}</span>
   </a>
 
-  <nav class="main-nav" aria-label="{{ T "mainNav" }}">
+  <nav class="main-nav" aria-label="Hoofdmenu">
     <ul>
       {{- range site.Menus.main }}
         {{- $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
@@ -17,7 +17,5 @@
       {{- end }}
     </ul>
   </nav>
-
-  {{ partial "language-switch.html" . }}
 </div>
 <div class="bunting" aria-hidden="true"></div>

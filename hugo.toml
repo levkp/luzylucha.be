@@ -2,12 +2,12 @@ baseURL = 'https://luzylucha.be/'
 title = 'Luz y Lucha'
 theme = 'luzylucha'
 
+locale = 'nl-BE'
 defaultContentLanguage = 'nl'
-defaultContentLanguageInSubdir = false
 disableKinds = ['taxonomy', 'rss']
 
-# Themes used to filter the creations. Term keys are shared by all languages;
-# each tag has a page in content/tags/<key>/ with its name and intro text per language.
+# Themes used to filter the creations; each tag has a page in content/tags/<key>/
+# with its name and intro text.
 [taxonomies]
   tag = 'tags'
 
@@ -19,6 +19,7 @@ disableKinds = ['taxonomy', 'rss']
   block = true
 
 [params]
+  description = 'Unieke textielcreaties: geborduurde broches en bijzondere gepersonaliseerde cadeaus, met liefde handgemaakt door Lucia Dewitte.'
   author = 'Lucia Dewitte'
   instagram = 'luzylucha'
   # Fill in to show an e-mail address in the footer and on the contact sections.
@@ -27,24 +28,3 @@ disableKinds = ['taxonomy', 'rss']
   # selectable, also when no creation uses it yet (it then shows an empty page).
   filterTags = ['baby-and-children', 'embroidery', 'patchwork', 'memories', 'upcycling']
 
-[languages]
-  [languages.nl]
-    label = 'Nederlands'
-    locale = 'nl-BE'
-    weight = 1
-    [languages.nl.params]
-      description = 'Unieke textielcreaties: geborduurde broches en bijzondere gepersonaliseerde cadeaus, met liefde handgemaakt door Lucia Dewitte.'
-
-  [languages.en]
-    label = 'English'
-    locale = 'en'
-    weight = 2
-    [languages.en.params]
-      description = 'Unique textile creations: embroidered brooches and special personalised gifts, lovingly handmade by Lucia Dewitte.'
-
-  [languages.fr]
-    label = 'Français'
-    locale = 'fr-BE'
-    weight = 3
-    [languages.fr.params]
-      description = 'Créations textiles uniques : broches brodées et cadeaux personnalisés d’exception, faits main avec amour par Lucia Dewitte.'

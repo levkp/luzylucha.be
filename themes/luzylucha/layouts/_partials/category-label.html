@@ -1,0 +1,8 @@
+{{- /*
+Returns the Dutch name of a work's category.
+
+@context {string} The category key, e.g. "brooch".
+@returns {string}
+*/ -}}
+{{- $labels := dict "brooch" "Broche" "patchwork" "Patchwork" "embroidery" "Borduurwerk" "sewing" "Naaiwerk" }}
+{{- return or (index $labels .) (humanize .) }}

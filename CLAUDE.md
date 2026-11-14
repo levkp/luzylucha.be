@@ -20,6 +20,4 @@ Focus on the product - embroideries, patchworks, etc. - to design visual element
 ## Code changes
 
 When making changes, make sure to:
-
 - never include JavaScript (this site serves static HTML and CSS only)
-- all text must be localized in three languages: English, Dutch and French

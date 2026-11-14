@@ -64,10 +64,6 @@
 }
 .footer-bottom p { margin: 0; }
 
-.site-footer .lang-switch a { color: var(--cream); box-shadow: inset 0 0 0 1.5px rgba(255, 248, 241, .5); }
-.site-footer .lang-switch a:hover { color: var(--ink); background: var(--gold); box-shadow: none; }
-.site-footer .lang-switch span { background: var(--gold); color: var(--ink); }
-
 @media (max-width: 47.99rem) {
   .footer-sprig { display: none; }
 }

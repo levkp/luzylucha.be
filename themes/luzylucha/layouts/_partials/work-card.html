@@ -30,13 +30,13 @@ Renders a work as a card. Shows a stitched placeholder when no photo is uploaded
           {{- else }}
             {{ partial "svg/sun.html" (dict "class" "placeholder-art") }}
           {{- end }}
-          <span class="placeholder-label">{{ T "photoComingSoon" }}</span>
+          <span class="placeholder-label">Foto volgt</span>
         </div>
       {{- end }}
       {{- if eq $style "hoop" }}</div>{{ partial "svg/hoop.html" . }}{{ end }}
     </div>
     <div class="work-caption">
-      {{- with $p.Params.category }}<span class="work-category">{{ T (printf "category_%s" .) }}</span>{{ end }}
+      {{- with $p.Params.category }}<span class="work-category">{{ partial "category-label.html" . }}</span>{{ end }}
       <h3 class="work-title">{{ $p.LinkTitle }}</h3>
     </div>
   </a>

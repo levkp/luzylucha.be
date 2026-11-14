@@ -6,12 +6,12 @@
         {{- $logo := .Resize "160x webp q90" }}
         <img src="{{ $logo.RelPermalink }}" width="80" height="80" alt="" loading="lazy">
       {{- end }}
-      <p class="footer-signature">{{ T "madeWithLove" }}</p>
+      <p class="footer-signature">Met liefde handgemaakt door Lucia Dewitte</p>
       {{ partial "svg/sprig.html" (dict "class" "footer-sprig" "petal" "#f9b34b" "heart" "#cc0000") }}
     </div>
 
     <div class="footer-col">
-      <h2 class="footer-title">{{ T "contact" }}</h2>
+      <h2 class="footer-title">Contact</h2>
       <ul class="contact-list">
         {{- with site.Params.instagram }}
         <li>
@@ -32,7 +32,7 @@
     </div>
 
     <div class="footer-col">
-      <h2 class="footer-title">{{ T "explore" }}</h2>
+      <h2 class="footer-title">Ontdek</h2>
       <ul class="footer-nav">
         {{- range site.Menus.main }}
           <li><a href="{{ .URL }}">{{ .Name }}</a></li>
@@ -42,7 +42,6 @@
   </div>
 
   <div class="container footer-bottom">
-    <p>&copy; {{ now.Year }} {{ site.Title }} – {{ site.Params.author }}. {{ T "rights" }}</p>
-    {{ partial "language-switch.html" . }}
+    <p>&copy; {{ now.Year }} {{ site.Title }} – {{ site.Params.author }}. Alle rechten voorbehouden.</p>
   </div>
 </div>
