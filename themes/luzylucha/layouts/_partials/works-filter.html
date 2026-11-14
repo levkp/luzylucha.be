@@ -15,7 +15,7 @@ Tags used on creations but missing from filterTags are appended at the end.
 <nav class="works-filter" aria-label="Filter op thema">
   <p class="works-filter-label">Filter op thema</p>
   <ul>
-    <li><a href="{{ .section.RelPermalink }}"{{ if not $active }} aria-current="page"{{ end }}>Alles <span class="works-filter-count">{{ len .section.Pages }}</span></a></li>
+    <li><a href="{{ .section.RelPermalink }}"{{ if not $active }} aria-current="page"{{ end }}>Overzicht <span class="works-filter-count">{{ len .section.Pages }}</span></a></li>
     {{- range $keys }}
       {{- with site.GetPage (printf "/tags/%s" .) }}
         <li><a href="{{ .RelPermalink }}"{{ if eq $.active .Data.Term }} aria-current="page"{{ end }}>{{ .LinkTitle }} <span class="works-filter-count">{{ len .Pages }}</span></a></li>

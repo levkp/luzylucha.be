@@ -2,7 +2,7 @@
 title = 'Pelikaan'
 date = 2026-11-12
 weight = 21
-featured = true
+featured = false
 category = 'brooch'
 tags = ['embroidery']
 +++
