@@ -1,7 +1,7 @@
 +++
 title = 'Vogel'
 date = 2026-11-12
-weight = 1
+weight = 3
 featured = true
 category = 'brooch'
 tags = ['embroidery']

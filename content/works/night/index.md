@@ -1,8 +1,8 @@
 +++
 title = 'Nacht'
 date = 2026-11-12
-weight = 16
+weight = 20
 featured = false
 category = 'brooch'
-tags = ['embroidery', 'patchwork', 'memories']
+tags = ['embroidery']
 +++

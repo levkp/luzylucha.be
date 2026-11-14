@@ -1,8 +1,8 @@
 +++
-title = 'De Schreeuw'
+title = 'Anatomisch hart'
 date = 2026-11-12
-weight = 17
-featured = false
+weight = 2
+featured = true
 category = 'brooch'
 tags = ['embroidery']
 +++

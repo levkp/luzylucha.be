@@ -1,7 +1,7 @@
 +++
-title = 'Dalí II'
+title = 'Kleine prins'
 date = 2026-11-12
-weight = 5
+weight = 23
 featured = true
 category = 'brooch'
 tags = ['embroidery']

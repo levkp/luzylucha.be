@@ -1,8 +1,8 @@
 +++
-title = 'Dalí'
+title = 'Bladwijzer 2'
 date = 2026-11-12
-weight = 11
-featured = false
+weight = 6
+featured = true
 category = 'brooch'
 tags = ['embroidery']
 +++

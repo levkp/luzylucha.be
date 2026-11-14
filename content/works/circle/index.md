@@ -1,8 +1,8 @@
 +++
 title = 'Cirkel'
 date = 2026-11-12
-weight = 10
+weight = 9
 featured = false
 category = 'brooch'
-tags = ['embroidery', 'patchwork']
+tags = ['embroidery']
 +++
