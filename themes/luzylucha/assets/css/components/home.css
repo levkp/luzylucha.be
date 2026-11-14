@@ -123,6 +123,7 @@
   pointer-events: none;
 }
 .hoop-fabric > .hero-sun { width: 78%; height: auto; }
+.hoop-fabric > .hero-photo { object-fit: cover; }
 
 /* ---------- Featured works ---------- */
 .featured {

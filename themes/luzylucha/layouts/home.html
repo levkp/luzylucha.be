@@ -19,7 +19,20 @@
     <div class="hero-visual">
       <div class="hoop hoop--hero">
         <div class="hoop-fabric">
-          {{ partial "svg/sun.html" (dict "class" "hero-sun") }}
+          {{- $hero := "" }}
+          {{- with site.GetPage "/works/butterfly" }}
+            {{- with .Resources.Get "butterfly.jpg" }}{{ $hero = . }}{{ end }}
+          {{- end }}
+          {{- with $hero }}
+            {{- $small := .Process "fill 480x480 Center webp q82" }}
+            {{- $large := .Process "fill 800x800 Center webp q82" }}
+            <img class="hero-photo" src="{{ $small.RelPermalink }}"
+                 srcset="{{ $small.RelPermalink }} 480w, {{ $large.RelPermalink }} 800w"
+                 sizes="(min-width: 30rem) 22rem, 75vw"
+                 width="480" height="480" alt="Vlinder, geborduurd door Lucia Dewitte" fetchpriority="high">
+          {{- else }}
+            {{ partial "svg/sun.html" (dict "class" "hero-sun") }}
+          {{- end }}
         </div>
         {{ partial "svg/hoop.html" . }}
       </div>
