@@ -24,7 +24,7 @@ Want schoonheid, hoop en menselijkheid zijn niet altijd vanzelfsprekend. Soms mo
 
 En dat verzet hoeft niet altijd luid te zijn. Ik kies ervoor om het onder andere met naald en draad te voeren.
 
-Dat is trouwens helemaal niet zo ongewoon. Doorheen de geschiedenis gebruikten vooral vrouwen textiel en borduurwerk om hun stem te laten horen. Van de Chileens arpilleras tijdens de dictatuur van Pinochet tot de geborduurde verhalen van vrouwen in Zuid-Afrika en de spandoeken van de suffragettes. Wat vaak als een braaf, huiselijk tijdverdrijf werd beschouwd, bleek ook een krachtig middel om onrecht aan te klagen, solidariteit te tonen en verhalen te bewaren. 
+Dat is trouwens helemaal niet zo ongewoon. Doorheen de geschiedenis gebruikten vooral vrouwen textiel en borduurwerk om hun stem te laten horen. Van de Chileense arpilleras tijdens de dictatuur van Pinochet tot de geborduurde verhalen van vrouwen in Zuid-Afrika en de spandoeken van de suffragettes. Wat vaak als een braaf, huiselijk tijdverdrijf werd beschouwd, bleek ook een krachtig middel om onrecht aan te klagen, solidariteit te tonen en verhalen te bewaren. 
 Voor mensen die hier meer willen over lezen, [hier](https://www.mo.be/reportage/de-naald-als-wapen) is een artikel van MO*.
 
 {{< figure-row class="img-half" >}}
