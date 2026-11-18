@@ -5,6 +5,7 @@ weight = 1
 featured = false
 availability = 'available'
 category = 'textile-art'
+price = '€50'
 tags = ['embroidery']
 images = ['allium.jpg', 'allium-framed.jpg']
 +++

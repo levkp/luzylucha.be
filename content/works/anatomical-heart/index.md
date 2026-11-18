@@ -5,5 +5,6 @@ weight = 2
 featured = false
 availability = 'available'
 category = 'brooch'
+price = '€35'
 tags = ['embroidery']
 +++

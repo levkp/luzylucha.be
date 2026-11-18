@@ -4,6 +4,7 @@ date = 2026-11-12
 weight = 12
 featured = true
 category = 'textile-art'
+price = '€50'
 availability = 'available'
 tags = ['embroidery']
 images = ['elephant.jpg', 'elephant-framed.jpg']

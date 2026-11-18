@@ -51,13 +51,26 @@
     <div class="work-detail-text">
       {{- with .Params.category }}<p class="work-category">{{ partial "category-label.html" . }}</p>{{ end }}
       <h1 class="page-title">{{ .Title }}</h1>
-      {{- with .Params.availability }}
-        {{- $labels := dict "available" "Beschikbaar" "sold" "Iemand was je voor!" "custom" "Werk op maat" }}
-        {{- with index $labels . }}
-          <p class="availability availability--{{ $.Params.availability }}"><span class="availability-dot" aria-hidden="true"></span>{{ . }}</p>
-        {{- else }}
-          {{- warnf "%s: unknown availability %q (use available, sold or custom)" $.File.Path . }}
+      {{- if or .Params.availability .Params.price }}
+      <div class="work-labels">
+        {{- with .Params.availability }}
+          {{- $labels := dict "available" "Beschikbaar" "sold" "Iemand was je voor!" "custom" "Werk op maat" }}
+          {{- with index $labels . }}
+            <p class="availability availability--{{ $.Params.availability }}"><span class="availability-dot" aria-hidden="true"></span>{{ . }}</p>
+          {{- else }}
+            {{- warnf "%s: unknown availability %q (use available, sold or custom)" $.File.Path . }}
+          {{- end }}
         {{- end }}
+        {{- with .Params.price }}
+          {{- /* A number is shown in euros (35 → € 35, 12.5 → € 12,50); text is shown as is. */}}
+          {{- $price := . }}
+          {{- if in (slice "int64" "float64") (printf "%T" .) }}
+            {{- $precision := cond (eq (math.Floor .) (float .)) 0 2 }}
+            {{- $price = lang.FormatCurrency $precision "EUR" . }}
+          {{- end }}
+          {{- with $price }}<p class="work-price"><span class="visually-hidden">Prijs: </span>{{ . }}</p>{{ end }}
+        {{- end }}
+      </div>
       {{- end }}
       <div class="prose">{{ .Content }}</div>
 

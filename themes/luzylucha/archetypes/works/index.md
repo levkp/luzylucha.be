@@ -11,6 +11,8 @@ category = 'brooch'
 #   sold       "Iemand was je voor!"
 #   custom     "Werk op maat" (personal piece that can be made again for you)
 availability = 'available'
+# Optional: price in euros, e.g. 35 or 12.5 (shown as € 35 / € 12,50), or a text such as 'Op aanvraag'.
+# price = 35
 # Themes for the filter on the creations page; see filterTags in hugo.toml.
 tags = ['brooch']
 materials = ''
