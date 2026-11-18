@@ -51,6 +51,14 @@
     <div class="work-detail-text">
       {{- with .Params.category }}<p class="work-category">{{ partial "category-label.html" . }}</p>{{ end }}
       <h1 class="page-title">{{ .Title }}</h1>
+      {{- with .Params.availability }}
+        {{- $labels := dict "available" "Beschikbaar" "sold" "Iemand was je voor!" "custom" "Werk op maat" }}
+        {{- with index $labels . }}
+          <p class="availability availability--{{ $.Params.availability }}"><span class="availability-dot" aria-hidden="true"></span>{{ . }}</p>
+        {{- else }}
+          {{- warnf "%s: unknown availability %q (use available, sold or custom)" $.File.Path . }}
+        {{- end }}
+      {{- end }}
       <div class="prose">{{ .Content }}</div>
 
       {{- if or .Params.materials .Params.size .Params.tags }}

@@ -252,6 +252,32 @@
 
 .work-detail-text .page-title { font-size: clamp(1.8rem, 1.3rem + 2vw, 2.6rem); }
 
+/* Availability label under the title: a small stitched patch. */
+.availability {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  margin: 0 0 1.25rem;
+  padding: .35rem 1rem .35rem .8rem;
+  border-radius: 999px;
+  font-size: .95rem;
+  font-weight: 500;
+  outline: 1.5px dashed currentColor;
+  outline-offset: -5px;
+}
+.availability-dot {
+  width: .6rem;
+  height: .6rem;
+  border-radius: 50%;
+  background: currentColor;
+  flex: none;
+}
+.availability--available { background: var(--gold); color: var(--ink); }
+.availability--available .availability-dot { background: var(--red); box-shadow: 0 0 0 3px rgba(204, 0, 0, .2); }
+.availability--custom { background: var(--cream); color: var(--red); box-shadow: inset 0 0 0 1.5px rgba(204, 0, 0, .35); }
+.availability--sold { background: var(--linen); color: var(--ink-soft); font-style: italic; }
+.availability--sold .availability-dot { background: transparent; box-shadow: inset 0 0 0 1.5px currentColor; }
+
 .work-specs {
   display: grid;
   grid-template-columns: auto 1fr;

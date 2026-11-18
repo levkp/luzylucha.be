@@ -6,6 +6,11 @@ draft = true
 featured = false
 # One of: brooch, patchwork, embroidery, sewing, textile-art, bookmark, necklace
 category = 'brooch'
+# Shown on the page of this work. One of:
+#   available  "Beschikbaar"
+#   sold       "Iemand was je voor!"
+#   custom     "Werk op maat" (personal piece that can be made again for you)
+availability = 'available'
 # Themes for the filter on the creations page; see filterTags in hugo.toml.
 tags = ['brooch']
 materials = ''
