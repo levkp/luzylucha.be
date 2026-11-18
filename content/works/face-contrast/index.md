@@ -1,5 +1,5 @@
 +++
-title = 'Gezicht in contrast'
+title = 'Black or white?'
 date = 2026-11-12
 weight = 13
 featured = false

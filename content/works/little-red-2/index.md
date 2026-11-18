@@ -1,5 +1,5 @@
 +++
-title = 'Wolf eet roodkapje op'
+title = 'Exit roodkapje'
 date = 2026-11-12
 weight = 17
 featured = false

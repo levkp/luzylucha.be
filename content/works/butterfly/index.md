@@ -1,5 +1,5 @@
 +++
-title = 'Vlinder'
+title = 'Nachtvlinder'
 date = 2026-11-12
 weight = 8
 featured = false

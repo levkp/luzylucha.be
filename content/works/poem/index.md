@@ -1,5 +1,5 @@
 +++
-title = 'Handgeschreven gedicht'
+title = 'Geborduurd handgeschreven gedicht'
 date = 2026-11-12
 weight = 22
 featured = false
