@@ -273,7 +273,8 @@
   flex: none;
 }
 .availability--available { background: var(--gold); color: var(--ink); }
-.availability--available .availability-dot { background: var(--red); box-shadow: 0 0 0 3px rgba(204, 0, 0, .2); }
+.availability--available .availability-dot,
+.availability--custom .availability-dot { background: var(--leaf); box-shadow: 0 0 0 3px rgba(79, 127, 50, .25); }
 .availability--custom { background: var(--cream); color: var(--red); box-shadow: inset 0 0 0 1.5px rgba(204, 0, 0, .35); }
 .availability--sold { background: var(--linen); color: var(--ink-soft); font-style: italic; }
 .availability--sold .availability-dot { background: transparent; box-shadow: inset 0 0 0 1.5px currentColor; }
