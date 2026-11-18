@@ -12,7 +12,7 @@ description = ''
 
 ## Hallo, ik ben Lucia
 
-Mijn naam is Lucia Dewitte. In Luz y lucha zit niet alleen mijn overtuiging maar ook een stukje van mijn naam in verweven. Luz y lucha ontstond uit een speelse combinatie van de Spaanse woorden luz (licht) en lucha (strijd). Twee woorden die samen bijna als mijn eigen naam klinken. Een gelukkig toeval maar vooral twee begrippen die voor mij onlosmakelijk met elkaar verbonden zijn.
+Mijn naam is Lucia Dewitte. In Luz y Lucha zit niet alleen mijn overtuiging maar ook een stukje van mijn naam verweven. Luz y Lucha ontstond uit een speelse combinatie van de Spaanse woorden luz (licht) en lucha (strijd). Twee woorden die samen bijna als mijn eigen naam klinken. Een gelukkig toeval maar vooral twee begrippen die voor mij onlosmakelijk met elkaar verbonden zijn.
 
 Luz. Licht.
 
@@ -26,7 +26,7 @@ En dat verzet hoeft niet altijd luid te zijn. Ik kies ervoor om het onder andere
 
 Dat is trouwens helemaal niet zo ongewoon. Doorheen de geschiedenis gebruikten vooral vrouwen textiel en borduurwerk om hun stem te laten horen. Van de Chileens arpilleras tijdens de dictatuur van Pinochet tot de geborduurde verhalen van vrouwen in Zuid-Afrika en de spandoeken van de suffragettes. Wat vaak als een braaf, huiselijk tijdverdrijf werd beschouwd, bleek ook een krachtig middel om onrecht aan te klagen, solidariteit te tonen en verhalen te bewaren.
 
-Die geschiedenis inspireert me. Met Luz y lucha wil ik op mijn eigen, bescheiden manier aan die traditie verder bouwen.
+Die geschiedenis inspireert me. Met Luz y Lucha wil ik op mijn eigen, bescheiden manier aan die traditie verder bouwen.
 
 Door oude kledingstukken een tweede leven te geven, in plaats van ze weg te gooien. Door te kiezen voor handwerk en unieke creaties in een wereld van massaproductie. Door herinneringen tastbaar te maken, in plaats van ze verloren te laten gaan.
 
@@ -34,8 +34,8 @@ Maar ook door soms heel bewust een politieke boodschap te verwerken in mijn werk
 
 Niet elk werkstuk hoeft een boodschap te dragen. Soms wil ik gewoon iets moois maken, iets speels, kleurrijks of een beetje absurd. Want ook schoonheid, humor en verwondering verdienen hun plaats.
 
-Voor mij sluiten die twee kanten elkaar niet uit. Integendeel. Licht is waar ik naar verlang. Strijd is wat soms nodig is om dat licht te beschermen. En ergens tussen die twee ontstaat Luz y lucha.
+Voor mij sluiten die twee kanten elkaar niet uit. Integendeel. Licht is waar ik naar verlang. Strijd is wat soms nodig is om dat licht te bereiken en te beschermen. En ergens tussen die twee ontstaat Luz y Lucha.
 
 Met aandacht gemaakt. Met ruimte voor imperfectie. Met liefde voor het ambacht en een gezonde dosis eigenzinnigheid. Geen massaproductie. Geen wegwerpspullen. Geen twee keer hetzelfde. Wel kleine creaties met een eigen verhaal, soms zacht en ontroerend, soms rebels en uitgesproken.
 
-Luz y lucha - een beetje schoonheid, een beetje rebellie en vooral veel draad.
+Luz y Lucha - een beetje schoonheid, een beetje rebellie en vooral veel draad.
