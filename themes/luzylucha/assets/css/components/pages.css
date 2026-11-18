@@ -39,6 +39,10 @@
 .prose .figure-row { display: flex; gap: 1rem; align-items: flex-start; margin-block: 1.5rem; }
 .prose .figure-row figure { flex: var(--ratio, 1) 1 0; min-width: 0; margin: 0; }
 .prose .figure-row img { width: 100%; }
+.prose .figure-row.img-half { width: 50%; margin-inline: auto; }
+@media (max-width: 47.99rem) {
+  .prose .figure-row.img-half { width: 100%; }
+}
 .prose figcaption {
   margin-top: .6rem;
   text-align: center;

@@ -7,7 +7,9 @@ Put each image on its own line, separated by a blank line:
 
 ![Alt text](second.jpg "Caption")
 {{< /figure-row >}}
+
+Add class="img-half" to show the row at half width, centred: {{< figure-row class="img-half" >}}
 */ -}}
-<div class="figure-row">
+<div class="figure-row{{ with .Get "class" }} {{ . }}{{ end }}">
 {{ .Inner | .Page.RenderString (dict "display" "block") }}
 </div>
