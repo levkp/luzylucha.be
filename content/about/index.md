@@ -27,11 +27,11 @@ En dat verzet hoeft niet altijd luid te zijn. Ik kies ervoor om het onder andere
 Dat is trouwens helemaal niet zo ongewoon. Doorheen de geschiedenis gebruikten vooral vrouwen textiel en borduurwerk om hun stem te laten horen. Van de Chileens arpilleras tijdens de dictatuur van Pinochet tot de geborduurde verhalen van vrouwen in Zuid-Afrika en de spandoeken van de suffragettes. Wat vaak als een braaf, huiselijk tijdverdrijf werd beschouwd, bleek ook een krachtig middel om onrecht aan te klagen, solidariteit te tonen en verhalen te bewaren. 
 Voor mensen die hier meer willen over lezen, [hier](https://www.mo.be/reportage/de-naald-als-wapen) is een artikel van MO*.
 
+{{< figure-row >}}
 ![Chileense arpillera met een geappliqueerde vrouw op rode stof en de geborduurde tekst ¿Dónde están?](donde_estan.png "Chileense arpilleras")
-{.img-half}
 
 ![Borduurwerk van een suffragette met een vlag waarop „Votes for Women” staat](votes_for_women.png "Suffragettes")
-{.img-half}
+{{< /figure-row >}}
 
 Die geschiedenis inspireert me. Met Luz y Lucha wil ik op mijn eigen, bescheiden manier aan die traditie verder bouwen.
 

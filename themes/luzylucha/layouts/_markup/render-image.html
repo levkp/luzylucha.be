@@ -2,19 +2,22 @@
 Markdown images. Images stored next to the page are resized and converted to WebP;
 other images are rendered as they are.
 An image on its own line becomes a <figure>: its Markdown title is shown as caption,
-and block attributes such as {.img-half} are set on the figure.
+and block attributes such as {.img-half} are set on the figure. Its width/height
+ratio is passed as --ratio, used by the figure-row shortcode to align heights.
 */ -}}
 {{- $img := .Page.Resources.Get .Destination }}
 {{- $tag := "" }}
+{{- $ratio := 0 }}
 {{- if and $img (ne $img.MediaType.SubType "svg") }}
   {{- $md := $img.Process "fit 700x700 webp q82" }}
   {{- $lg := $img.Process "fit 1300x1300 webp q82" }}
+  {{- $ratio = div (float $md.Width) $md.Height }}
   {{- $tag = printf `<img src="%s" srcset="%s %dw, %s %dw" sizes="(min-width: 48rem) 38rem, 90vw" width="%d" height="%d" alt="%s" loading="lazy">` $md.RelPermalink $md.RelPermalink $md.Width $lg.RelPermalink $lg.Width $md.Width $md.Height (.PlainText | htmlEscape) }}
 {{- else }}
   {{- $tag = printf `<img src="%s" alt="%s">` (.Destination | safeURL) (.PlainText | htmlEscape) }}
 {{- end }}
 {{- if .IsBlock }}
-<figure{{ range $k, $v := .Attributes }} {{ $k }}="{{ $v }}"{{ end }}>
+<figure{{ range $k, $v := .Attributes }} {{ $k }}="{{ $v }}"{{ end }}{{ with $ratio }} style="--ratio: {{ printf "%.4f" . }}"{{ end }}>
   {{ $tag | safeHTML }}
   {{- with .Title }}
   <figcaption>{{ . }}</figcaption>

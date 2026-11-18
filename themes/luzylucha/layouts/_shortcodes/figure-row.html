@@ -1,0 +1,13 @@
+{{- /*
+Shows the Markdown images inside it next to each other, all at the same height.
+Put each image on its own line, separated by a blank line:
+
+{{< figure-row >}}
+![Alt text](first.jpg "Caption")
+
+![Alt text](second.jpg "Caption")
+{{< /figure-row >}}
+*/ -}}
+<div class="figure-row">
+{{ .Inner | .Page.RenderString (dict "display" "block") }}
+</div>

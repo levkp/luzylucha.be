@@ -34,6 +34,11 @@
 .prose img { display: block; max-width: 100%; height: auto; border-radius: var(--radius); margin-block: 1.5rem; }
 .prose figure { margin: 1.5rem 0; }
 .prose figure img { margin-block: 0; }
+/* figure-row shortcode: images next to each other at the same height.
+   Each figure grows in proportion to its width/height ratio, so heights match. */
+.prose .figure-row { display: flex; gap: 1rem; align-items: flex-start; margin-block: 1.5rem; }
+.prose .figure-row figure { flex: var(--ratio, 1) 1 0; min-width: 0; margin: 0; }
+.prose .figure-row img { width: 100%; }
 .prose figcaption {
   margin-top: .6rem;
   text-align: center;
