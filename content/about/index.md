@@ -12,7 +12,7 @@ description = ''
 
 ## Hallo, ik ben Lucia
 
-Mijn naam is Lucia Dewitte. In Luz y Lucha zit niet alleen mijn overtuiging maar ook een stukje van mijn naam verweven. Luz y Lucha ontstond uit een speelse combinatie van de Spaanse woorden luz (licht) en lucha (strijd). Twee woorden die samen bijna als mijn eigen naam klinken. Een gelukkig toeval maar vooral twee begrippen die voor mij onlosmakelijk met elkaar verbonden zijn.
+Mijn naam is Lucia Dewitte. In Luz y Lucha zit niet alleen mijn overtuiging, maar ook een stukje van mijn naam verweven. Luz y Lucha ontstond uit een speelse combinatie van de Spaanse woorden luz (licht) en lucha (strijd). Twee woorden die samen bijna als mijn eigen naam klinken. Een gelukkig toeval maar vooral twee begrippen die voor mij onlosmakelijk met elkaar verbonden zijn.
 
 Luz. Licht.
 
@@ -24,7 +24,14 @@ Want schoonheid, hoop en menselijkheid zijn niet altijd vanzelfsprekend. Soms mo
 
 En dat verzet hoeft niet altijd luid te zijn. Ik kies ervoor om het onder andere met naald en draad te voeren.
 
-Dat is trouwens helemaal niet zo ongewoon. Doorheen de geschiedenis gebruikten vooral vrouwen textiel en borduurwerk om hun stem te laten horen. Van de Chileens arpilleras tijdens de dictatuur van Pinochet tot de geborduurde verhalen van vrouwen in Zuid-Afrika en de spandoeken van de suffragettes. Wat vaak als een braaf, huiselijk tijdverdrijf werd beschouwd, bleek ook een krachtig middel om onrecht aan te klagen, solidariteit te tonen en verhalen te bewaren.
+Dat is trouwens helemaal niet zo ongewoon. Doorheen de geschiedenis gebruikten vooral vrouwen textiel en borduurwerk om hun stem te laten horen. Van de Chileens arpilleras tijdens de dictatuur van Pinochet tot de geborduurde verhalen van vrouwen in Zuid-Afrika en de spandoeken van de suffragettes. Wat vaak als een braaf, huiselijk tijdverdrijf werd beschouwd, bleek ook een krachtig middel om onrecht aan te klagen, solidariteit te tonen en verhalen te bewaren. 
+Voor mensen die hier meer willen over lezen, [hier](https://www.mo.be/reportage/de-naald-als-wapen) is een artikel van MO*.
+
+![Chileense arpillera met een geappliqueerde vrouw op rode stof en de geborduurde tekst ¿Dónde están?](donde_estan.png "Chileense arpilleras")
+{.img-half}
+
+![Borduurwerk van een suffragette met een vlag waarop „Votes for Women” staat](votes_for_women.png "Suffragettes")
+{.img-half}
 
 Die geschiedenis inspireert me. Met Luz y Lucha wil ik op mijn eigen, bescheiden manier aan die traditie verder bouwen.
 

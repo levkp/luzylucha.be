@@ -14,6 +14,10 @@ disableKinds = ['taxonomy', 'rss']
 [permalinks.term]
   tags = '/works/tags/:contentbasename/'
 
+# Render an image on its own line as a <figure> (see layouts/_markup/render-image.html),
+# with its Markdown title as caption: ![alt](image.jpg "Caption").
+[markup.goldmark.parser]
+  wrapStandAloneImageWithinParagraph = false
 # Allow {.class} on the line after a Markdown block, e.g. {.img-half} under an image.
 [markup.goldmark.parser.attribute]
   block = true
