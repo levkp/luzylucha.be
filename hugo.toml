@@ -30,5 +30,5 @@ disableKinds = ['taxonomy', 'rss']
   email = ''
   # Tags shown in the filter on the creations page, in this order. Every tag here is
   # selectable, also when no creation uses it yet (it then shows an empty page).
-  filterTags = ['baby-and-children', 'embroidery', 'patchwork', 'memories', 'upcycling']
+  filterTags = ['baby-and-children', 'embroidery', 'patchwork', 'memories', 'upcycling', 'nice-to-haves']
 
